@@ -116,7 +116,7 @@ footer p
 .menu ul li
 {
 	display: inline;
-	padding-left: 40px;
+	padding-left: 19px;
 }
 
 .menu ul
@@ -129,20 +129,27 @@ footer p
 {
 	text-decoration: none;
 	color: #343434;
-	padding: 6px 19px 8px 19px;
+	padding: 6px 14px 8px 14px;
 }
 
 .menu .active
 {
+
 	background-color: #5187c4;
-	padding: 6px 19px 8px 19px;
+	padding: 6px 14px 8px 14px;
 	color: white;
+	border-bottom: 2px solid rgb(80, 110, 155);
 }
 
 .menu ul li a:hover
 {
 	background-color: #ededed;
-	padding: 6px 19px 8px 19px;
+	padding: 6px 14px 8px 14px;
+	border-bottom: 2px solid #a0a0a0;
+	transition: background-color 0.5s;
+	transition: border-bottom 0.3s;
+	-webkit-transition: background-color 0.5s;
+	-webkit-transition: border-bottom 0.3s;
 }
 
 .side 
@@ -161,7 +168,7 @@ footer p
 
 .side .social
 {
-	min-height: 275px;
+	min-height: 340px;
 	background-color: white;
 	margin-top: 25px;
 	box-shadow: 0px 2px 0px #c9c9c9;
@@ -235,6 +242,17 @@ footer p
 	cursor: pointer;
 }
 
+.social i 
+{
+	font-size: 30px;
+	margin-right: 15px;
+}
+
+.social span 
+{
+	padding-top: 7px;
+}
+
 .social .facebook
 {
 	background-color: #3b5998;
@@ -304,6 +322,16 @@ The main block
 {
 	cursor: pointer;
 	border: 1px solid #5187c4;
+}
+
+.project1:hover .meta h1
+{
+	color:#5187c4;
+}
+
+.project1:hover .meta p
+{
+	color:#5187c4;
 }
 
 .project1 .thumbnail
