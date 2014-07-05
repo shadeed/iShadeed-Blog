@@ -71,7 +71,7 @@ body
 	width:1000px;
 	margin: auto;
 	margin-top: 40px;
-	height:1320px;
+	height:850px;
 }
 
 .menu
@@ -174,7 +174,7 @@ footer p
 
 .side .bio
 {
-	min-height: 310px;
+	min-height: 220px;
 	background-color: white;
 	margin-top: 25px;
 	box-shadow: 0px 2px 0px #c9c9c9;
@@ -188,14 +188,71 @@ footer p
 	box-shadow: 0px 2px 0px #c9c9c9;
 }
 
-.main 
+.about 
 {
-	min-height: 1100px;
+	min-height: 445px;
 	width: 660px;
 	margin-left: 340px;
 	background-color: white;
-	margin-top: 25px;
+	margin-top: 65px;
 	box-shadow: 0px 2px 0px #c9c9c9;
+}
+
+.paper
+{
+	float: left;
+	position: absolute;
+	margin-left: 14px;
+	z-index: 1;
+}
+
+.v-line
+{
+	width: 1px;
+	height: 405px;
+	border-left: 1px solid #ef7995;
+	border-right: 1px solid #ef7995;
+	position: absolute;
+	margin-left: 30px;
+	margin-top: 10px;
+	z-index: 200;
+}
+
+.text 
+{
+	position: absolute;
+	width: 580px;
+	margin-left: 45px;
+	color: #343434;
+	font-family: Roboto-Regular;
+	line-height: 46px;
+	margin-top: 11px;
+	z-index: 100;
+}
+
+.text span 
+{
+	color: #5187c4;
+	font-family: Roboto-bold;
+}
+
+.h-line
+{
+	height: 1px;
+	width: 630px;
+	background-color: #e8e8e8;
+	margin-top: 44px;
+
+}
+
+.title
+{
+	font-family: Roboto-bold;
+	font-size: 22px;
+	color: #484848;
+	float: left;
+	margin-left: 19px;
+	margin-top: 25px;
 }
 
 .bio .shadeed
@@ -207,25 +264,6 @@ footer p
 	position: absolute;
 	margin-top: 15px;
 	margin-left: 15px;
-}
-
-.bio h1
-{
-	font-family: Roboto-Bold;
-	font-size: 22px;
-	color: #5187c4;
-	padding-top: 220px;
-	padding-left: 15px;
-}
-
-.bio p
-{
-	font-family: Roboto-Regular;
-	font-size: 14px;
-	padding-top: 12px;
-	padding-left: 15px;	
-	line-height: 20px;
-	color: #343434;
 }
 
 .social h1
@@ -297,103 +335,6 @@ footer p
 {
 	width: 21%;
 }
-
-/* 
-The main block
-*/
-
-.main ul a 
-{
-	text-decoration: none;
-	font-family: Roboto-Regular;
-	color:#b7b7b7;
-	font-size: 22px;
-}
-
-.main ul li 
-{
-	display: inline;
-	padding-left: 25px;
-}
-
-.main ul 
-{
-	padding-top: 20px;
-}
-
-.project1
-{
-	width: 290px;
-	height: 315px;
-	background-color: #fff;
-	margin-left: 25px;
-	margin-top: 15px;
-	border: 1px solid #e4e4e4;
-	float: left;
-}
-
-.project1:hover
-{
-	cursor: pointer;
-	border: 1px solid #5187c4;
-}
-
-.project1:hover .meta h1
-{
-	color:#5187c4;
-	transition: color 0.5s;
-	-webkit-transition: color 0.5s;
-}
-
-.project1:hover .meta p
-{
-	color:#5187c4;
-	transition: color 0.5s;
-	-webkit-transition: color 0.5s;
-}
-
-.project1 .thumbnail
-{
-	background: url(../images/project1.png);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	width: 291px;
-	height: 190px;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-	opacity: 0.6;
-}
-
-.project1:hover .thumbnail
-{
-	opacity: 1;
-	background-size: 120% 120%;
-}
-
-.meta h1
-{
-	font-family: Roboto-Bold;
-	font-size: 18px;
-	color: #676767;
-	padding-top: 20px;
-	padding-left: 15px;
-	transition: color 0.5s;
-	-webkit-transition: color 0.5s;
-}
-
-.meta p
-{
-	font-family: Roboto-Regular;
-	font-size: 14px;
-	padding-top: 12px;
-	padding-left: 15px;	
-	line-height: 20px;
-	color: #343434;
-	transition: color 0.5s;
-	-webkit-transition: color 0.5s;
-}
-
-
 
 
 
