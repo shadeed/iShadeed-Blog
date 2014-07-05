@@ -51,7 +51,7 @@ table {
 /*iShadeed Blog*/
 /**********************************************************************/
 
-@font-face
+/*@font-face
 {
 	font-family: Roboto-Regular;
 }
@@ -59,6 +59,19 @@ table {
 @font-face
 {
 	font-family: Roboto-Bold;
+}*/
+
+@font-face
+{
+	font-family: Roboto, sans-serif;
+    font-weight: normal;
+}
+
+
+@font-face
+{
+	font-family: Roboto, sans-serif;
+    font-weight: bold;
 }
 
 body 
@@ -106,7 +119,8 @@ footer
 	height: 75px;
 	background-color: white;
 	box-shadow: 0px 2px 0px #c9c9c9;
-	font-family: Roboto-Regular;
+	font-family: 'Roboto',sans-serif;
+	font-weight: regular;
 	text-align: center;
 }
 
@@ -135,7 +149,8 @@ footer p
 
 .menu ul
 {
-	font-family: Roboto-Regular;
+	font-family: 'Roboto',sans-serif;
+	font-weight: regular;
 	padding-top: 26px;
 }
 
@@ -211,7 +226,8 @@ footer p
 
 .bio h1
 {
-	font-family: Roboto-Bold;
+	font-family: 'Roboto',sans-serif;
+	font-weight: bold;
 	font-size: 22px;
 	color: #5187c4;
 	padding-top: 220px;
@@ -220,7 +236,8 @@ footer p
 
 .bio p
 {
-	font-family: Roboto-Regular;
+	font-family: 'Roboto',sans-serif;
+	font-weight: regular;
 	font-size: 14px;
 	padding-top: 12px;
 	padding-left: 15px;	
@@ -230,7 +247,8 @@ footer p
 
 .social h1
 {
-	font-family: Roboto-Bold;
+	font-family: 'Roboto',sans-serif;
+	font-weight: bold;
 	font-size: 18px;
 	color: #5187c4;
 	padding-top: 20px;
@@ -245,7 +263,8 @@ footer p
 	float: left;
 	color: white;
 	text-decoration: none;
-	font-family: Roboto-Regular;
+	font-family: 'Roboto',sans-serif;
+	font-weight: regular;
 	font-size: 14px;
 	text-align: center;
 }
@@ -305,7 +324,8 @@ The main block
 .main ul a 
 {
 	text-decoration: none;
-	font-family: Roboto-Regular;
+	font-family: 'Roboto',sans-serif;
+	font-weight: regular;
 	color:#b7b7b7;
 	font-size: 22px;
 }
@@ -372,7 +392,8 @@ The main block
 
 .meta h1
 {
-	font-family: Roboto-Bold;
+	font-family: 'Roboto',sans-serif;
+	font-weight: bold;
 	font-size: 18px;
 	color: #676767;
 	padding-top: 20px;
@@ -383,7 +404,8 @@ The main block
 
 .meta p
 {
-	font-family: Roboto-Regular;
+	font-family: 'Roboto',sans-serif;
+	font-weight: regular;
 	font-size: 14px;
 	padding-top: 12px;
 	padding-left: 15px;	

@@ -53,12 +53,15 @@ table {
 
 @font-face
 {
-	font-family: Roboto-Regular;
+	font-family: Roboto, sans-serif;
+    font-weight: normal;
 }
+
 
 @font-face
 {
-	font-family: Roboto-Bold;
+	font-family: Roboto, sans-serif;
+    font-weight: bold;
 }
 
 body 
@@ -106,7 +109,8 @@ footer
 	height: 75px;
 	background-color: white;
 	box-shadow: 0px 2px 0px #c9c9c9;
-	font-family: Roboto-Regular;
+	font-family: 'Roboto',sans-serif;
+	font-weight: regular;
 	text-align: center;
 }
 
@@ -135,7 +139,8 @@ footer p
 
 .menu ul
 {
-	font-family: Roboto-Regular;
+	font-family: 'Roboto',sans-serif;
+	font-weight: regular;
 	padding-top: 26px;
 }
 
@@ -224,7 +229,8 @@ footer p
 	width: 580px;
 	margin-left: 45px;
 	color: #343434;
-	font-family: Roboto-Regular;
+	font-family: 'Roboto',sans-serif;
+	font-weight: regular;
 	line-height: 46px;
 	margin-top: 11px;
 	z-index: 100;
@@ -247,7 +253,8 @@ footer p
 
 .title
 {
-	font-family: Roboto-bold;
+	font-family: 'Roboto',sans-serif;
+	font-weight: bold;
 	font-size: 22px;
 	color: #484848;
 	float: left;
@@ -268,7 +275,8 @@ footer p
 
 .social h1
 {
-	font-family: Roboto-Bold;
+	font-family: 'Roboto',sans-serif;
+	font-weight: bold;
 	font-size: 18px;
 	color: #5187c4;
 	padding-top: 20px;
@@ -283,7 +291,8 @@ footer p
 	float: left;
 	color: white;
 	text-decoration: none;
-	font-family: Roboto-Regular;
+	font-family: 'Roboto',sans-serif;
+	font-weight: regular;
 	font-size: 14px;
 	text-align: center;
 }
