@@ -51,6 +51,16 @@ table {
 /*iShadeed Blog*/
 /**********************************************************************/
 
+/*@font-face
+{
+	font-family: Roboto-Regular;
+}
+
+@font-face
+{
+	font-family: Roboto-Bold;
+}*/
+
 @font-face
 {
 	font-family: Roboto, sans-serif;
@@ -62,6 +72,12 @@ table {
 {
 	font-family: Roboto, sans-serif;
     font-weight: bold;
+}
+
+@font-face
+{
+	font-family: Roboto, sans-serif;
+    font-weight: lighter;
 }
 
 @font-face 
@@ -91,7 +107,7 @@ body
 	width:1000px;
 	margin: auto;
 	margin-top: 40px;
-	height:850px;
+	height:1320px;
 }
 
 .menu
@@ -126,6 +142,7 @@ body
 footer
 {
 	margin-top: 25px;
+	margin-bottom: 20px;
 	height: 75px;
 	background-color: white;
 	box-shadow: 0px 2px 0px #c9c9c9;
@@ -199,7 +216,7 @@ footer p
 
 .side .bio
 {
-	min-height: 220px;
+	min-height: 310px;
 	background-color: white;
 	margin-top: 25px;
 	box-shadow: 0px 2px 0px #c9c9c9;
@@ -213,73 +230,14 @@ footer p
 	box-shadow: 0px 2px 0px #c9c9c9;
 }
 
-.about 
+.main 
 {
-	min-height: 445px;
+	min-height: 1805px;
 	width: 660px;
 	margin-left: 340px;
 	background-color: white;
-	margin-top: 65px;
-	box-shadow: 0px 2px 0px #c9c9c9;
-}
-
-.paper
-{
-	float: left;
-	position: absolute;
-	margin-left: 14px;
-	z-index: 1;
-}
-
-.v-line
-{
-	width: 1px;
-	height: 405px;
-	border-left: 1px solid #ef7995;
-	border-right: 1px solid #ef7995;
-	position: absolute;
-	margin-left: 30px;
-	margin-top: 10px;
-	z-index: 200;
-}
-
-.text 
-{
-	position: absolute;
-	width: 580px;
-	margin-left: 45px;
-	color: #343434;
-	font-family: 'Roboto',sans-serif;
-	font-weight: regular;
-	line-height: 46px;
-	margin-top: 11px;
-	z-index: 100;
-}
-
-.text span 
-{
-	color: #5187c4;
-	font-family: Roboto-bold;
-}
-
-.h-line
-{
-	height: 1px;
-	width: 630px;
-	background-color: #e8e8e8;
-	margin-top: 44px;
-
-}
-
-.title
-{
-	font-family: 'Roboto',sans-serif;
-	font-weight: bold;
-	font-size: 22px;
-	color: #484848;
-	float: left;
-	margin-left: 19px;
 	margin-top: 25px;
+	box-shadow: 0px 2px 0px #c9c9c9;
 }
 
 .bio .shadeed
@@ -291,6 +249,27 @@ footer p
 	position: absolute;
 	margin-top: 15px;
 	margin-left: 15px;
+}
+
+.bio h1
+{
+	font-family: 'Roboto',sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	color: #5187c4;
+	padding-top: 220px;
+	padding-left: 15px;
+}
+
+.bio p
+{
+	font-family: 'Roboto',sans-serif;
+	font-weight: regular;
+	font-size: 14px;
+	padding-top: 12px;
+	padding-left: 15px;	
+	line-height: 20px;
+	color: #343434;
 }
 
 .social h1
@@ -365,10 +344,161 @@ footer p
 	width: 21%;
 }
 
+/* 
+The main block
+*/
+
+.thanks
+{
+	font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #5187c4;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+.people
+{
+	width: 620px;
+	margin: auto;
+	min-height: 200px;
+}
+
+.p1 .thumbnail
+{
+	width: 38px;
+	height: 38px;
+	background: url(../images/sami.jpg);
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 10px;
+}
+
+.p2 .thumbnail
+{
+	width: 38px;
+	height: 38px;
+	background: url(../images/maan.jpg);
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 10px;
+}
 
 
+.p3 .thumbnail
+{
+	width: 38px;
+	height: 38px;
+	background: url(../images/josh.jpg);
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 10px;
+}
 
 
+.p4 .thumbnail
+{
+	width: 38px;
+	height: 38px;
+	background: url(../images/ayman.jpg);
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 10px;
+}
+
+.p5 .thumbnail
+{
+	width: 38px;
+	height: 38px;
+	background: url(../images/alia.jpg);
+	background-size: 38px 38px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 10px;
+}
+
+
+.p6 .thumbnail
+{
+	width: 38px;
+	height: 38px;
+	background: url(../images/sami2.jpg);
+	background-size: 38px 38px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 10px;
+}
+
+.p7 .thumbnail
+{
+	width: 38px;
+	height: 38px;
+	background: url(../images/basel.jpg);
+	background-size: 38px 38px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 10px;
+}
+
+.p8 .thumbnail
+{
+	width: 38px;
+	height: 38px;
+	background: url(../images/jes.jpg);
+	background-size: 38px 38px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 10px;
+}
+
+.p9 .thumbnail
+{
+	width: 38px;
+	height: 38px;
+	background: url(../images/mina.jpg);
+	background-size: 38px 38px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 10px;
+}
+
+.profile h1
+{
+	color: #5187c4;
+	font-size: 16px;
+	font-family: Roboto, sans-serif;
+	font-weight: bold;
+}
+
+.profile h2
+{
+	color: #656565;
+	font-size: 16px;
+	font-family: Roboto, sans-serif;
+	font-weight: lighter;
+	float: left;
+	margin-top: 4px;
+}
+
+.profile
+{
+	width:630px;
+	float: left;
+	margin-top: 25px;
+}
+
+.person p
+{
+	float: left;
+	margin-top: 10px;
+	color: #727272;
+	font-family: Roboto, sans-serif;
+	font-weight: lighter;
+	font-size: 16px;
+	line-height: 25px;
+}
 
 
 

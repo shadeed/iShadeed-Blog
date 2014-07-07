@@ -74,6 +74,23 @@ table {
     font-weight: bold;
 }
 
+@font-face 
+{
+    font-family: "HelveticaNeue";
+    src: url("../fonts/arabic/HelveticaNeueW23forSKY-Reg.eot");
+    src: url("../fonts/arabic/HelveticaNeueW23forSKY-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/arabic/HelveticaNeueW23forSKY-Reg.woff") format("woff"), url("../fonts/arabic/HelveticaNeueW23forSKY-Reg.ttf") format("truetype"), url("../fonts/arabic/HelveticaNeueW23forSKY-Reg.svg#HelveticaNeueLTArabic55Roman") format("svg");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: "HelveticaNeue";
+    src: url("../fonts/arabic/HelveticaNeueW23forSKY-Bd.eot");
+    src: url("../fonts/arabic/HelveticaNeueW23forSKY-Bd.eot?#iefix") format("embedded-opentype"), url("../fonts/arabic/HelveticaNeueW23forSKY-Bd.woff") format("woff"), url("../fonts/arabic/HelveticaNeueW23forSKY-Bd.ttf") format("truetype"), url("../fonts/arabic/HelveticaNeueW23forSKY-Bd.svg#HelveticaNeueLTArabic55Roman") format("svg");
+    font-weight: 400;
+}
+
 body 
 {
 	background-color: #e4e4e4;
@@ -101,6 +118,9 @@ body
 	float: right;
 	margin-right: 25px;
 	font-size: 18px;
+	font-family: "HelveticaNeue";
+	font-weight: 100;
+	font-style: normal;
 }
 
 .arabic:hover 
