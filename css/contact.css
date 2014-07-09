@@ -51,16 +51,6 @@ table {
 /*iShadeed Blog*/
 /**********************************************************************/
 
-/*@font-face
-{
-	font-family: Roboto-Regular;
-}
-
-@font-face
-{
-	font-family: Roboto-Bold;
-}*/
-
 @font-face
 {
 	font-family: Roboto, sans-serif;
@@ -101,7 +91,7 @@ body
 	width:1000px;
 	margin: auto;
 	margin-top: 40px;
-	height:1320px;
+	height:860px;
 }
 
 .menu
@@ -209,7 +199,7 @@ footer p
 
 .side .bio
 {
-	min-height: 310px;
+	min-height: 220px;
 	background-color: white;
 	margin-top: 25px;
 	box-shadow: 0px 2px 0px #c9c9c9;
@@ -223,14 +213,117 @@ footer p
 	box-shadow: 0px 2px 0px #c9c9c9;
 }
 
-.main 
+.contact 
 {
-	min-height: 1100px;
+	min-height: 600px;
 	width: 660px;
 	margin-left: 340px;
 	background-color: white;
-	margin-top: 25px;
+	margin-top: 65px;
 	box-shadow: 0px 2px 0px #c9c9c9;
+}
+
+.text 
+{
+	width: 615px;
+	margin-left: 20px;
+	color: #343434;
+	font-family: 'Roboto',sans-serif;
+	font-weight: regular;
+	line-height: 30px;
+	margin-top: 10px;
+	z-index: 100;
+	float: left;
+}
+
+form
+{
+	margin-left: 20px;
+	float: left;
+}
+
+form label
+{
+	display: block;
+	font-size: 16px;
+	color: #818181;
+	font-family: 'Roboto',sans-serif;
+	font-weight: normal;
+	margin-top: 20px;
+}
+
+form input[type="text"]
+{
+	font-family: 'Roboto',sans-serif;
+	font-weight: lighter;
+	height: 35px;
+	outline: none;
+	font-size: 16px;
+	color: #9f9f9f;
+	border: 2px solid #d5d5d5;
+	margin-top: 7px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+form input[type="text"]:focus
+{
+	border: 2px solid #5187c4;
+}
+
+form textarea
+{
+	font-family: 'Roboto',sans-serif;
+	font-weight: lighter;
+	outline: none;
+	font-size: 16px;
+	color: #9f9f9f;
+	border: 2px solid #d5d5d5;
+	margin-top: 7px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+form textarea:focus
+{
+	border: 2px solid #5187c4;
+}
+
+form input[type="submit"]
+{
+	display: block;
+	font-family: 'Roboto',sans-serif;
+	font-weight: lighter;
+	font-size: 16px;
+	color: #fff;
+	outline: none;
+	height: 35px;
+	background-color: #5187c4;
+	margin-left: 3px;
+	margin-top: 15px;	
+	border: none;
+	padding-left: 35px;
+	padding-right: 35px;
+	transition: background-color;
+}
+
+form input[type="submit"]:hover
+{
+	cursor: pointer;
+	background-color: #416d9f;
+	transition: background-color 0.5s;
+}
+
+
+.title
+{
+	font-family: 'Roboto',sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	color: #484848;
+	float: left;
+	margin-left: 19px;
+	margin-top: 25px;
 }
 
 .bio .shadeed
@@ -242,27 +335,6 @@ footer p
 	position: absolute;
 	margin-top: 15px;
 	margin-left: 15px;
-}
-
-.bio h1
-{
-	font-family: 'Roboto',sans-serif;
-	font-weight: bold;
-	font-size: 22px;
-	color: #5187c4;
-	padding-top: 220px;
-	padding-left: 15px;
-}
-
-.bio p
-{
-	font-family: 'Roboto',sans-serif;
-	font-weight: regular;
-	font-size: 14px;
-	padding-top: 12px;
-	padding-left: 15px;	
-	line-height: 20px;
-	color: #343434;
 }
 
 .social h1
@@ -336,111 +408,6 @@ footer p
 {
 	width: 21%;
 }
-
-/* 
-The main block
-*/
-
-.main ul a 
-{
-	text-decoration: none;
-	font-family: 'Roboto',sans-serif;
-	font-weight: regular;
-	color:#b7b7b7;
-	font-size: 22px;
-}
-
-.tab-active
-{
-	color: #5187c4;
-}
-
-.main ul li 
-{
-	display: inline;
-	padding-left: 25px;
-}
-
-.main ul 
-{
-	padding-top: 20px;
-}
-
-.project1
-{
-	width: 290px;
-	height: 315px;
-	background-color: #fff;
-	margin-left: 25px;
-	margin-top: 15px;
-	border: 1px solid #e4e4e4;
-	float: left;
-}
-
-.project1:hover
-{
-	cursor: pointer;
-	border: 1px solid #5187c4;
-}
-
-.project1:hover .meta h1
-{
-	color:#5187c4;
-	transition: color 0.5s;
-	-webkit-transition: color 0.5s;
-}
-
-.project1:hover .meta p
-{
-	color:#5187c4;
-	transition: color 0.5s;
-	-webkit-transition: color 0.5s;
-}
-
-.project1 .thumbnail
-{
-	background: url(../images/project1.png);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	width: 291px;
-	height: 190px;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-	opacity: 0.6;
-}
-
-.project1:hover .thumbnail
-{
-	opacity: 1;
-	background-size: 120% 120%;
-}
-
-.meta h1
-{
-	font-family: 'Roboto',sans-serif;
-	font-weight: bold;
-	font-size: 18px;
-	color: #676767;
-	padding-top: 20px;
-	padding-left: 15px;
-	transition: color 0.5s;
-	-webkit-transition: color 0.5s;
-}
-
-.meta p
-{
-	font-family: 'Roboto',sans-serif;
-	font-weight: regular;
-	font-size: 14px;
-	padding-top: 12px;
-	padding-left: 15px;	
-	line-height: 20px;
-	color: #343434;
-	transition: color 0.5s;
-	-webkit-transition: color 0.5s;
-}
-
-
 
 
 
