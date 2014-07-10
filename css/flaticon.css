@@ -17,12 +17,21 @@ margin-left: 20px;
 }.flaticon-behance2:before {
 	content: "\e000";
 }
-.flaticon-facebook42:before {
+.flaticon-black134:before {
 	content: "\e001";
 }
-.flaticon-social19:before {
+.flaticon-black302:before {
 	content: "\e002";
 }
-.flaticon-vintage2:before {
+.flaticon-facebook42:before {
 	content: "\e003";
+}
+.flaticon-simple18:before {
+	content: "\e004";
+}
+.flaticon-social19:before {
+	content: "\e005";
+}
+.flaticon-vintage2:before {
+	content: "\e006";
 }
