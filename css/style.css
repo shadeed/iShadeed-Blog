@@ -400,6 +400,11 @@ The main block
 	float: left;
 }
 
+.project1 a
+{
+	text-decoration: none;
+}
+
 .project1:hover
 {
 	cursor: pointer;
