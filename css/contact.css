@@ -271,6 +271,11 @@ form input[type="text"]:focus
 	border: 2px solid #5187c4;
 }
 
+input:focus + label
+{
+	color: red;
+}
+
 form textarea
 {
 	font-family: 'Roboto',sans-serif;

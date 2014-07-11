@@ -7,3 +7,15 @@ $(window).scroll(function() {
     console.log('h'+height);
     console.log('w'+width);
 });
+
+$(document).ready(function() {
+	$("#projectclick").on("click", function () {
+		//alert("hello");
+		$('.project-image').css("display","block");
+	});
+
+	$("#modalclose").on("click", function () {
+		//alert("hello");
+		$('.project-image').css("display","none");
+	});
+});

@@ -425,6 +425,117 @@ The main block
 	-webkit-transition: color 0.5s;
 }
 
+.project-modal .thumbnail
+{
+	background: url(../images/project-modal.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 291px;
+	height: 190px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+	opacity: 0.6;
+}
+
+.project-modal
+{
+	width: 290px;
+	height: 315px;
+	background-color: #fff;
+	margin-left: 25px;
+	margin-top: 15px;
+	border: 1px solid #e4e4e4;
+	float: left;
+}
+
+.project-modal a
+{
+	text-decoration: none;
+}
+
+.project-modal:hover
+{
+	cursor: pointer;
+	border: 1px solid #5187c4;
+}
+
+.project-modal:hover .meta h1
+{
+	color:#5187c4;
+	transition: color 0.5s;
+	-webkit-transition: color 0.5s;
+}
+
+.project-modal:hover .meta p
+{
+	color:#5187c4;
+	transition: color 0.5s;
+	-webkit-transition: color 0.5s;
+}
+
+.project-modal:hover .thumbnail
+{
+	opacity: 1;
+	background-size: 120% 120%;
+}
+
+/*---------*/
+.project-post .thumbnail
+{
+	background: url(../images/project-post.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 291px;
+	height: 190px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+	opacity: 0.6;
+}
+
+.project-post
+{
+	width: 290px;
+	height: 315px;
+	background-color: #fff;
+	margin-left: 25px;
+	margin-top: 15px;
+	border: 1px solid #e4e4e4;
+	float: left;
+}
+
+.project-post a
+{
+	text-decoration: none;
+}
+
+.project-post:hover
+{
+	cursor: pointer;
+	border: 1px solid #5187c4;
+}
+
+.project-post:hover .meta h1
+{
+	color:#5187c4;
+	transition: color 0.5s;
+	-webkit-transition: color 0.5s;
+}
+
+.project-post:hover .meta p
+{
+	color:#5187c4;
+	transition: color 0.5s;
+	-webkit-transition: color 0.5s;
+}
+
+.project-post:hover .thumbnail
+{
+	opacity: 1;
+	background-size: 120% 120%;
+}
+
+/*---------*/
+
 .project1 .thumbnail
 {
 	background: url(../images/project1.png);
@@ -468,15 +579,74 @@ The main block
 	-webkit-transition: color 0.5s;
 }
 
+/*--------------------Modal--------------------*/
 
+.modalDialog {
+	position: absolute;
+	top:0;
+	right: 0;
+	left: 0;
+	font-family: Roboto, sans-serif;
+    font-weight: normal;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
 
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
 
+.modalDialog > div {
+	position: relative;
+	padding: 5px 20px 13px 20px;
+	background: #5187c4;
+}
 
+#modalbox
+{
+	width: 100%;
+	height: 100%;
+}
 
+#project-title
+{
+	text-align: center;
+	font-size: 30px;
+	padding-top: 13px;
+	color: #fff;
+	margin-top: 20px;
+}
 
+#modalbox a
+{
+	margin-left: 1180px;
+	text-decoration: none;
+	color: #fff;
+}
 
+#modalbox i
+{
+	font-size: 1.5em;
+}
 
+#modalDialog label
+{
+	display: block;
+	float: left;
+}
 
+.project-image
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
 
 
 

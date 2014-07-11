@@ -6,9 +6,43 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
 	<link href='//fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 </head>
+<script type="text/javascript">
+	$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    var width = $(window).width();
+    if(height  > 105) {
+        $('.post-progress').css("width","+=20");
+    }
+    console.log('h'+height);
+    console.log('w'+width);
+});
 
+$(document).ready(function() {
+	$("#projectclick").on("click", function () {
+		//alert("hello");
+		$('.project-image').css("display","block");
+	});
+
+	$("#modalclose").on("click", function () {
+		//alert("hello");
+		$('.project-image').css("display","none");
+	});
+});
+
+</script>
 <body>
+
+<div id="openModal" class="modalDialog">
+	<div id="modalbox">
+		<h1 id="project-title">Turbo words project</h1>
+		<a href="#close" id="modalclose">
+			<i class="flaticon-close11"></i>
+		</a>
+	    <img src="images/behance.jpg" class="project-image" style="display:none;">
+	</div>
+</div>
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -65,9 +99,7 @@
 
 		<div class="twitter-widget">
 			<a class="twitter-timeline" width="319" href="https://twitter.com/shadeed9" data-widget-id="486971379854483456">Tweets by @shadeed9</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
+         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</div>
 	</div>
 	<div class="main">
@@ -81,21 +113,21 @@
 		</div>
 
 		<div class="portfolio">
-			<div class="project1">
-				<a href="post.html">
+			<div class="project-modal">
+				<a href="#openModal" id="projectclick">
 				<div class="thumbnail"></div>
 				<div class="meta">
-					<h1>Instagram Redesign</h1>
+					<h1>View project modal</h1>
 					<p>This is an example text, just to fill up this white area. Thanks for reading! :P</p>
 				</div>
 				</a>
 			</div>
 
-			<div class="project1">
+			<div class="project-post">
 				<a href="post.html">
 				<div class="thumbnail"></div>
 				<div class="meta">
-					<h1>Instagram Redesign</h1>
+					<h1>Open blog post</h1>
 					<p>This is an example text, just to fill up this white area. Thanks for reading! :P</p>
 				</div>
 				</a>
