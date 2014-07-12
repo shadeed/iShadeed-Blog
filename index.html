@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
 	<link href='//fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="js/jquery-1.9.1.js"></script>
 </head>
 <script type="text/javascript">
 	$(window).scroll(function() {
@@ -20,14 +20,42 @@
 });
 
 $(document).ready(function() {
+	// to hide all the elements when refreshing the page
+	$('.blogs').css("display","none");
+
 	$("#projectclick").on("click", function () {
-		//alert("hello");
 		$('.project-image').css("display","block");
 	});
 
 	$("#modalclose").on("click", function () {
-		//alert("hello");
 		$('.project-image').css("display","none");
+	});
+
+	$(".blog-tab").on("click", function () {
+		$('.portfolio').css("display","none");
+		//fadeIn
+		$(".blogs").fadeIn();
+	    $(".blogs").fadeIn("slow");
+	    $(".blogs").fadeIn(3000);
+
+		$('.blogs').css("display","inline");
+		$(this).css("color","#5187c4");
+		$(".portfolio-tab").css("color","#b7b7b7");
+		$(".main").css("min-height","1350px");
+
+	});
+
+	$(".portfolio-tab").on("click", function () {
+		$('.blogs').css("display","none");
+		//fadeIn
+		$(".portfolio").fadeIn();
+	    $(".portfolio").fadeIn("slow");
+	    $(".portfolio").fadeIn(3000);
+
+		$('.portfolio').css("display","inline");
+		$(this).css("color","#5187c4");
+		$(".blog-tab").css("color","#b7b7b7");
+		$(".main").css("min-height","1100px");
 	});
 });
 
@@ -104,12 +132,92 @@ $(document).ready(function() {
 	</div>
 	<div class="main">
 		<ul>
-			<li><a href="#" style="color:#5187c4;" class="portfolio">Portfolio</a></li>
-			<li><a href="#" class="blogs">Blogs</a></li>
+			<li><a href="#" style="color:#5187c4;" class="portfolio-tab">Portfolio</a></li>
+			<li><a href="#" class="blog-tab">Blogs</a></li>
 		</ul>
 
 		<div class="blogs">
-			
+			<div class="article">
+				<a href="post.html">
+				<div class="thumbnail"></div>
+				<div class="meta">
+					<h1>Steps of moving to self-employment</h1>
+					<p>It’s just five simple steps that will help in the success of moving from official job to self-employment, while recognizing that they may vary from one person to another...”</p>
+				</div>
+				<div class="bottom-section">
+					<div class="date">
+						<i class="flaticon-simple18"></i>
+						<h2>Sat, 12/7/2014</h2>
+				    </div>
+				    <div class="time">
+						<i class="flaticon-clock46"></i>
+						<h2>Needs 3 minutes to read</h2>
+				    </div>
+				    <div class="comments">
+						<i class="flaticon-comment3"></i>
+						<h2>13 comments</h2>
+				    </div>
+				    <div class="read">
+						<i class="flaticon-add11"></i>
+						<a href="#">Read more</a>
+				    </div>
+				</div>
+				</a>
+			</div>
+			<div class="article">
+				<a href="post.html">
+				<div class="thumbnail"></div>
+				<div class="meta">
+					<h1>Steps of moving to self-employment</h1>
+					<p>It’s just five simple steps that will help in the success of moving from official job to self-employment, while recognizing that they may vary from one person to another...”</p>
+				</div>
+				<div class="bottom-section">
+					<div class="date">
+						<i class="flaticon-simple18"></i>
+						<h2>Sat, 12/7/2014</h2>
+				    </div>
+				    <div class="time">
+						<i class="flaticon-clock46"></i>
+						<h2>Needs 3 minutes to read</h2>
+				    </div>
+				    <div class="comments">
+						<i class="flaticon-comment3"></i>
+						<h2>13 comments</h2>
+				    </div>
+				    <div class="read">
+						<i class="flaticon-add11"></i>
+						<a href="#">Read more</a>
+				    </div>
+				</div>
+				</a>
+			</div>
+			<div class="article">
+				<a href="post.html">
+				<div class="thumbnail"></div>
+				<div class="meta">
+					<h1>Steps of moving to self-employment</h1>
+					<p>It’s just five simple steps that will help in the success of moving from official job to self-employment, while recognizing that they may vary from one person to another...”</p>
+				</div>
+				<div class="bottom-section">
+					<div class="date">
+						<i class="flaticon-simple18"></i>
+						<h2>Sat, 12/7/2014</h2>
+				    </div>
+				    <div class="time">
+						<i class="flaticon-clock46"></i>
+						<h2>Needs 3 minutes to read</h2>
+				    </div>
+				    <div class="comments">
+						<i class="flaticon-comment3"></i>
+						<h2>13 comments</h2>
+				    </div>
+				    <div class="read">
+						<i class="flaticon-add11"></i>
+						<a href="#">Read more</a>
+				    </div>
+				</div>
+				</a>
+			</div>
 		</div>
 
 		<div class="portfolio">
@@ -181,15 +289,3 @@ $(document).ready(function() {
 </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

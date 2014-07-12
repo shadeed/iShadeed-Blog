@@ -648,8 +648,137 @@ The main block
     margin-top: 40px;
 }
 
+/*---------------------Blogs-----------------------*/
 
+.main a:hover
+{
+	opacity: 0.8;
+}
 
+.article
+{
+	width: 615px;
+	min-height: 400px;
+	background-color: #fff;
+	margin-left: 25px;
+	margin-top: 15px;
+	border: 1px solid #e4e4e4;
+	float: left;
+}
 
+.article .meta
+{
+	border-bottom: 1px solid #e4e4e4;
+	padding-bottom: 15px;
+}
 
+.article .thumbnail
+{
+	background: url(../images/work.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 615px;
+	height: 240px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+	opacity: 0.8;
+}
 
+.article a
+{
+	text-decoration: none;
+}
+
+.article:hover
+{
+	cursor: pointer;
+	border: 1px solid #5187c4;
+}
+
+.article:hover .meta
+{
+	border-bottom: 1px solid #5187c4;
+}
+
+.article:hover .meta h1
+{
+	color:#5187c4;
+	transition: color 0.5s;
+	-webkit-transition: color 0.5s;
+}
+
+.article:hover .meta p
+{
+	color:#5187c4;
+	transition: color 0.5s;
+	-webkit-transition: color 0.5s;
+}
+
+.article:hover .thumbnail
+{
+	opacity: 1;
+	background-size: 120% 120%;
+}
+
+/*-----------------Bottom section------------------*/
+
+.bottom-section
+{
+	float: left;
+	width: 100%;
+	font-family: Roboto;
+	font-weight: lighter;
+	font-size: 14px;
+	margin-top: 15px;
+}
+
+.bottom-section i 
+{
+	float: left;
+	margin-right: 3px;
+	color: #8e8e8e;
+}
+
+.date
+{
+	float: left;
+	width: 143px;
+}
+
+.bottom-section h2 
+{
+	color: #8e8e8e;
+}
+
+.bottom-section a 
+{
+	color: #8e8e8e;
+}
+
+.bottom-section a:hover
+{
+	color: #5187c4;
+}
+
+.bottom-section a:hover + i
+{
+	color: #5187c4;
+}
+
+.time
+{
+	float: left;
+	width: 196px;
+}
+
+.comments
+{
+	float: left;
+	width: 133px;
+}
+
+.read
+{
+	float: left;
+	width: 114px;
+}
