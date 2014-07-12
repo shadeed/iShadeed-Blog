@@ -51,16 +51,6 @@ table {
 /*iShadeed Blog*/
 /**********************************************************************/
 
-/*@font-face
-{
-	font-family: Roboto-Regular;
-}
-
-@font-face
-{
-	font-family: Roboto-Bold;
-}*/
-
 @font-face
 {
 	font-family: Roboto, sans-serif;
@@ -166,6 +156,34 @@ footer p
 {
 	display: inline;
 	padding-left: 19px;
+}
+
+.portfolio
+{
+	margin-top: 10px;
+}
+
+.blogs
+{
+	margin-top: 10px;
+}
+
+.portfolio-tab
+{
+	border-bottom: 4px solid #5187c4;
+    padding-bottom: 9px;
+    margin-left: 25px;
+}
+
+.blog-tab
+{
+	padding-bottom: 9px;
+}
+
+.main ul 
+{
+	border-bottom: 1px solid #e4e4e4;
+	padding-bottom: 15px;
 }
 
 .menu ul
@@ -381,6 +399,11 @@ The main block
 .main ul li 
 {
 	display: inline;
+	/*padding-left: 25px;*/
+}
+
+.main ul li:nth-child(2)
+{
 	padding-left: 25px;
 }
 
@@ -756,11 +779,6 @@ The main block
 }
 
 .bottom-section a:hover
-{
-	color: #5187c4;
-}
-
-.bottom-section a:hover + i
 {
 	color: #5187c4;
 }
