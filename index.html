@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
 	<link href='//fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
 	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery.flip.min.js"></script>
+	<script src="js/jquery.flip.js"></script>
 </head>
 <script type="text/javascript">
 	$(window).scroll(function() {
@@ -64,6 +66,21 @@ $(document).ready(function() {
 		$(".blog-tab").css("color","#b7b7b7");
 		$(".main").css("min-height","1100px");
 	});
+
+	$('.hide').on("click", function () {
+		//alert("hello");
+	    //$(this).hide();
+	    $('.bdesh').fadeIn(300);
+	    $('.bdesh').css("display","inline");
+	    //$('.bdesh-text').animate({font-size:"14px"});
+	});
+
+	$('.bdesh').on("click", function () {
+		//alert("hello");
+	    //$(this).hide();
+	    $(this).fadeOut();
+	    $('.bdesh').css("display","none");
+	});
 });
 
 </script>
@@ -96,6 +113,7 @@ $(document).ready(function() {
 			<li><a href="index.html" class="active">Home</a></li>
 			<li><a href="about.html">About me</a></li>
 			<li><a href="testimonials.html">Testimonials</a></li>
+			<li><a href="cv.html">My CV</a></li>
 			<li><a href="contact.html">Contact me</a></li>
 			<a href="ar/index.html" class="arabic">عربي</a>
 		</ul>
@@ -103,9 +121,18 @@ $(document).ready(function() {
 
 	<div class="side">
 		<div class="bio">
+			<div class="bdesh">
+				<h3 class="bdesh-text">I don't want to hide :P</h3>
+			</div>
 			<div class="shadeed"></div>
-			<h1>Ahmad Shadeed</h1>
-			<p>Web and mobile designer. Interested in user experience and interaction design.</p>
+			<div class="bio-meta">
+				<h1>Ahmad Shadeed</h1>
+				<p>Web and mobile designer. Interested in user experience and interaction design.</p>
+		    </div> 
+		    <a href="#" class="hide">
+		    	<i class="flaticon-left17" class="hide-icon"></i>
+		    	<span class="hide-text">Hide me</span>
+		    </a> 
 		</div>
 		<div class="social">
 			<h1>Follow Me</h1>
@@ -249,7 +276,7 @@ $(document).ready(function() {
 			</div>
 
 			<div class="project1">
-				<a href="post.html">
+				<a href="#">
 				<div class="thumbnail"></div>
 				<div class="meta">
 					<h1>Instagram Redesign</h1>

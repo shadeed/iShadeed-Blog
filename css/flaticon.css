@@ -44,18 +44,24 @@ margin-left: 20px;
 .flaticon-google110:before {
 	content: "\e009";
 }
-.flaticon-linkedin2:before {
+.flaticon-left17:before {
 	content: "\e00a";
 }
-.flaticon-simple18:before {
+.flaticon-linkedin2:before {
 	content: "\e00b";
 }
-.flaticon-social19:before {
+.flaticon-quotes2:before {
 	content: "\e00c";
 }
-.flaticon-twitter12:before {
+.flaticon-simple18:before {
 	content: "\e00d";
 }
-.flaticon-vintage2:before {
+.flaticon-social19:before {
 	content: "\e00e";
+}
+.flaticon-twitter12:before {
+	content: "\e00f";
+}
+.flaticon-vintage2:before {
+	content: "\e010";
 }

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>iShadeed Blog</title>
+	<link rel="stylesheet" type="text/css" href="css/cv.css">
+	<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
+	<link href='//fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery.flip.min.js"></script>
+	<script src="js/jquery.flip.js"></script>
+</head>
+<script type="text/javascript">
+	$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    var width = $(window).width();
+    if(height  > 105) {
+        $('.post-progress').css("width","+=20");
+    }
+    console.log('h'+height);
+    console.log('w'+width);
+});
+
+$(document).ready(function() {
+	$('.hide').on("click", function () {
+		//alert("hello");
+	    //$(this).hide();
+	    $('.bdesh').fadeIn(300);
+	    $('.bdesh').css("display","inline");
+	    //$('.bdesh-text').animate({font-size:"14px"});
+	});
+
+	$('.bdesh').on("click", function () {
+		//alert("hello");
+	    //$(this).hide();
+	    $(this).fadeOut();
+	    $('.bdesh').css("display","none");
+	});
+});
+
+</script>
+<body>
+
+<div id="openModal" class="modalDialog">
+	<div id="modalbox">
+		<h1 id="project-title">Turbo words project</h1>
+		<a href="#close" id="modalclose">
+			<i class="flaticon-close11"></i>
+		</a>
+	    <img src="images/behance.jpg" class="project-image" style="display:none;">
+	</div>
+</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="wrapper">
+	<div class="menu">
+		<a href="index.html"><div class="logo"></div></a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About me</a></li>
+			<li><a href="testimonials.html">Testimonials</a></li>
+			<li><a href="cv.html" class="active">My CV</a></li>
+			<li><a href="contact.html">Contact me</a></li>
+			<a href="ar/index.html" class="arabic">عربي</a>
+		</ul>
+	</div>
+
+	<div class="bio">
+		<div class="bdesh">
+			<h3 class="bdesh-text">I don't want to hide :P</h3>
+		</div>
+		<div class="shadeed"></div>
+		<div class="bio-meta">
+			<h1>Ahmad Shadeed</h1>
+			<p>Web and mobile designer. Interested in user experience and interaction design.</p>
+	    </div> 
+	</div>
+
+	<div class="summary">
+		<div class="top">
+			<h1>Summary</h1>
+		</div>
+		<p><span>Self taught, Fresh graduate, 22 years old</span> Designer from Palestine. Since my early childhood I loved the world of shapes and colors. I learnt to be a graphic designer because I have a strong insistence for learning new things. I see every design project as a problem that needs a solution. <span>Currently</span> I’m learning Frontend development and drawing!</p>
+    </div>
+
+    <div class="education">
+		<div class="top">
+			<h1>Education</h1>
+		</div>
+		<div class="edu edu-item1">
+			<h1>Arab American University - Jenin</h1>
+			<h2>Bachalor of Multimedia Technology</h2>
+			<h3>(2010 - 2014)</h3>
+		</div>
+		<div class="edu edu-item1">
+			<h1>Illar Secondary Boys School</h1>
+			<h2>Tawjehe</h2>
+			<h3>(2006 - 2010)</h3>
+		</div>
+    </div>
+
+    <div class="experience">
+		<div class="top">
+			<h1>Experience</h1>
+		</div>
+		<div class="exp">
+			<h1>Product Designer</h1>
+			<h2>Wamda</h2>
+			<h3>(2014 - Present)</h3>
+		</div>
+		<div class="exp">
+			<h1>Freelancer Graphic Designer</h1>
+			<h2>iShadeed</h2>
+			<h3>(2012 - Present)</h3>
+		</div>
+    </div>
+
+    <div class="skills">
+		<div class="top">
+			<h1>Skills</h1>
+		</div>
+		<div class="sk-list">
+			<div class="sk ui">
+				<span>UI Design</span>
+				<div class="grey"></div>
+			</div>
+
+			<div class="sk ux"><span>UX Design </span></div>
+			<div class="sk web"><span>HTML5/CSS3</span></div>
+			<div class="sk ps"><span>Photoshop</span></div>
+			<div class="sk mobile"><span>Mobile Design</span></div>
+			<div class="sk php"><span>PHP</span></div>
+			<div class="sk mysql"><span>MySQL</span></div>
+		</div>
+    </div>
+
+    <div class="quote">
+		<blockquote>
+		<i class="flaticon-quotes2"></i>
+		A good designer who can design and code at the same time <span> - Ahmad Shadeed</span>
+		<i class="flaticon-quotes2"></i>
+		</blockquote>
+    </div>
+
+    <div class="quote2">
+		<blockquote>
+		<i class="flaticon-quotes2"></i>
+		To be or not to be, that is the question <span> - Ahmad Shakespeare</span>
+		<i class="flaticon-quotes2"></i>
+		</blockquote>
+    </div>
+
+    <div class="languages">
+		<div class="top">
+			<h1>Languages</h1>
+		</div>
+		<div class="lang">
+			<h1>English</h1>
+			<h2>Limited working proficiency</h2>
+		</div>
+		<div class="lang">
+			<h1>Arabic</h1>
+			<h2>Native or bilingual proficiency</h2>
+		</div>
+    </div>
+
+    <div class="references">
+		<div class="top">
+			<h1>References</h1>
+		</div>
+		<div class="ref">
+			<h1>Dr. Muath Sabha</h1>
+			<h2>Chairman of Multimedia Technology department</h2>
+			<h3>msabha@gmail.com</h3>
+		</div>
+		<div class="ref">
+			<h1>Dr. Muath Sabha</h1>
+			<h2>Chairman of Multimedia Technology department</h2>
+			<h3>msabha@gmail.com</h3>
+		</div>
+    </div>
+
+	<div class="clear"></div>
+	<footer>
+		<p>Thanks for reaching here :)</p>
+	</footer>
+</div>
+</body>
+</html>
