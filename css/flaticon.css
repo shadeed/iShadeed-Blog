@@ -35,33 +35,39 @@ margin-left: 20px;
 .flaticon-close11:before {
 	content: "\e006";
 }
-.flaticon-comment3:before {
+.flaticon-close13:before {
 	content: "\e007";
 }
-.flaticon-facebook42:before {
+.flaticon-comment3:before {
 	content: "\e008";
 }
-.flaticon-google110:before {
+.flaticon-download60:before {
 	content: "\e009";
 }
-.flaticon-left17:before {
+.flaticon-facebook42:before {
 	content: "\e00a";
 }
-.flaticon-linkedin2:before {
+.flaticon-google110:before {
 	content: "\e00b";
 }
-.flaticon-quotes2:before {
+.flaticon-left17:before {
 	content: "\e00c";
 }
-.flaticon-simple18:before {
+.flaticon-linkedin2:before {
 	content: "\e00d";
 }
-.flaticon-social19:before {
+.flaticon-quotes2:before {
 	content: "\e00e";
 }
-.flaticon-twitter12:before {
+.flaticon-simple18:before {
 	content: "\e00f";
 }
-.flaticon-vintage2:before {
+.flaticon-social19:before {
 	content: "\e010";
+}
+.flaticon-twitter12:before {
+	content: "\e011";
+}
+.flaticon-vintage2:before {
+	content: "\e012";
 }

@@ -7,8 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
 	<link href='//fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
 	<script src="js/jquery-1.9.1.js"></script>
-	<script src="js/jquery.flip.min.js"></script>
-	<script src="js/jquery.flip.js"></script>
 </head>
 <script type="text/javascript">
 	$(window).scroll(function() {
@@ -30,27 +28,16 @@ $(document).ready(function() {
 	    //$('.bdesh-text').animate({font-size:"14px"});
 	});
 
-	$('.bdesh').on("click", function () {
+	/*$('.bdesh').on("click", function () {
 		//alert("hello");
 	    //$(this).hide();
 	    $(this).fadeOut();
 	    $('.bdesh').css("display","none");
-	});
+	});*/
 });
 
 </script>
 <body>
-
-<div id="openModal" class="modalDialog">
-	<div id="modalbox">
-		<h1 id="project-title">Turbo words project</h1>
-		<a href="#close" id="modalclose">
-			<i class="flaticon-close11"></i>
-		</a>
-	    <img src="images/behance.jpg" class="project-image" style="display:none;">
-	</div>
-</div>
-
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -75,9 +62,12 @@ $(document).ready(function() {
 	</div>
 
 	<div class="bio">
-		<div class="bdesh">
-			<h3 class="bdesh-text">I don't want to hide :P</h3>
-		</div>
+		<a href="http://www.google.com">
+			<div class="bdesh">
+				<i class="flaticon-download60"></i>
+				<h3 class="bdesh-text">Download as PDF</h3>
+			</div>
+		</a>
 		<div class="shadeed"></div>
 		<div class="bio-meta">
 			<h1>Ahmad Shadeed</h1>
@@ -129,17 +119,48 @@ $(document).ready(function() {
 			<h1>Skills</h1>
 		</div>
 		<div class="sk-list">
-			<div class="sk ui">
-				<span>UI Design</span>
+			<div class="sk">
+				<div class="colored ui">
+					<span>UI Design</span>
+				</div>
 				<div class="grey"></div>
 			</div>
-
-			<div class="sk ux"><span>UX Design </span></div>
-			<div class="sk web"><span>HTML5/CSS3</span></div>
-			<div class="sk ps"><span>Photoshop</span></div>
-			<div class="sk mobile"><span>Mobile Design</span></div>
-			<div class="sk php"><span>PHP</span></div>
-			<div class="sk mysql"><span>MySQL</span></div>
+			<div class="sk">
+				<div class="colored ux">
+					<span>UX Design</span>
+				</div>
+				<div class="grey"></div>
+			</div>
+			<div class="sk">
+				<div class="colored web">
+					<span>HTML5/CSS3</span>
+				</div>
+				<div class="grey"></div>
+			</div>
+			<div class="sk">
+				<div class="colored ps">
+					<span>Photoshop</span>
+				</div>
+				<div class="grey"></div>
+			</div>
+			<div class="sk">
+				<div class="colored mobile">
+					<span>Mobile Design</span>
+				</div>
+				<div class="grey"></div>
+			</div>
+			<div class="sk">
+				<div class="colored php">
+					<span>PHP</span>
+				</div>
+				<div class="grey"></div>
+			</div>
+			<div class="sk">
+				<div class="colored mysql">
+					<span>MySQL</span>
+				</div>
+				<div class="grey"></div>
+			</div>
 		</div>
     </div>
 
@@ -147,16 +168,38 @@ $(document).ready(function() {
 		<blockquote>
 		<i class="flaticon-quotes2"></i>
 		A good designer who can design and code at the same time <span> - Ahmad Shadeed</span>
-		<i class="flaticon-quotes2"></i>
+		<i class="flaticon-quotes2 bottom"></i>
 		</blockquote>
+		<div class="share">
+			<div class="share-meta">
+				<span>Share</span>
+				<a href="#facebook" class="share-item">
+					<i class="flaticon-facebook42"></i>
+				</a>
+				<a href="#twitter" class="share-item">
+					<i class="flaticon-social19"></i>
+				</a>
+		    </div>
+		</div>
     </div>
 
     <div class="quote2">
 		<blockquote>
 		<i class="flaticon-quotes2"></i>
 		To be or not to be, that is the question <span> - Ahmad Shakespeare</span>
-		<i class="flaticon-quotes2"></i>
+		<i class="flaticon-quotes2 bottom"></i>
 		</blockquote>
+		<div class="share">
+			<div class="share-meta">
+				<span>Share</span>
+				<a href="#facebook" class="share-item">
+					<i class="flaticon-facebook42"></i>
+				</a>
+				<a href="#twitter" class="share-item">
+					<i class="flaticon-social19"></i>
+				</a>
+		    </div>
+		</div>
     </div>
 
     <div class="languages">
@@ -183,9 +226,12 @@ $(document).ready(function() {
 			<h3>msabha@gmail.com</h3>
 		</div>
 		<div class="ref">
-			<h1>Dr. Muath Sabha</h1>
-			<h2>Chairman of Multimedia Technology department</h2>
-			<h3>msabha@gmail.com</h3>
+			<h1>Dr. Mohammad Maree</h1>
+			<h2>Assistant professor at Multimediy Technology department</h2>
+			<div class="email">
+				<i class="flaticon-close13"></i>
+				<h3>maree@gmail.com</h3>
+			</div>
 		</div>
     </div>
 
