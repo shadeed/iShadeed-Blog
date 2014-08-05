@@ -47,6 +47,11 @@ table {
 	border-spacing: 0;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /**********************************************************************/
 /*iShadeed Blog*/
 /**********************************************************************/
@@ -84,14 +89,7 @@ table {
 body 
 {
 	background-color: #e4e4e4;
-}
-
-.wrapper
-{
-	width:1000px;
-	margin: auto;
-	margin-top: 40px;
-	height:1050px;
+	font-family: "HelveticaNeue";
 }
 
 .menu
@@ -105,17 +103,10 @@ body
 {
 	text-decoration: none;
 	color: #343434;
-	float: right;
-	margin-right: 25px;
 	font-size: 18px;
 	font-family: "HelveticaNeue";
 	font-weight: 100;
 	font-style: normal;
-}
-
-.arabic:hover 
-{
-	opacity: 0.75;
 }
 
 .clear
@@ -123,32 +114,14 @@ body
 	clear: both;
 }
 
-footer
-{
-	margin-top: 25px;
-	margin-bottom: 25px;
-	height: 75px;
-	background-color: white;
-	box-shadow: 0px 2px 0px #c9c9c9;
-	font-family: 'Roboto',sans-serif;
-	font-weight: regular;
-	text-align: center;
-}
-
-footer p 
-{
-	padding-top: 28px;
-	color: #343434;
-}
-
 .logo
 {
-	float: left;
+	float: right;
 	width:154px;
 	height: 22px;
 	background: url(../images/logo.png);
 	background-repeat: no-repeat;
-	margin-left: 14px;
+	margin-right: 14px;
 	margin-top: 22px;
 }
 
@@ -158,39 +131,14 @@ footer p
 	padding-left: 19px;
 }
 
-.portfolio
-{
-	margin-top: 10px;
-}
-
-.summary
-{
-	margin-top: 10px;
-}
-
-.portfolio-tab
-{
-	border-bottom: 4px solid #5187c4;
-    padding-bottom: 9px;
-    margin-left: 25px;
-}
-
-.blog-tab
-{
-	padding-bottom: 9px;
-}
-
-.main ul 
-{
-	border-bottom: 1px solid #e4e4e4;
-	padding-bottom: 15px;
-}
-
 .menu ul
 {
-	font-family: 'Roboto',sans-serif;
-	font-weight: regular;
+	font-size: 16px;
+	font-family: "HelveticaNeue";
+	font-weight: 100;
 	padding-top: 26px;
+	float: right;
+	margin-right: 20px;
 }
 
 .menu ul li a
@@ -211,78 +159,95 @@ footer p
 .menu ul li a:hover
 {
 	padding: 6px 14px 8px 14px;
-	font-weight: bold;
     color: #5187c4;
     border-bottom: 2px solid;
 	transition: border-bottom 0.3s;
 	-webkit-transition: border-bottom 0.3s;
 }
 
-.side 
+
+/* bio */
+
+.container .column
 {
-	width: 320px;
-	float: left;
+	float: right;
 }
 
-.bio
+.bio 
 {
-	float: left;
-	width: 320px;
 	min-height: 320px;
-	background-color: white;
+	background-color: #fff;
 	margin-top: 25px;
 	box-shadow: 0px 2px 0px #c9c9c9;
 }
 
-.hide
+.bio h1
 {
-	float: left;
-	margin-top:20px;
-	margin-left: 77px;
+	font-family: "HelveticaNeue";
+	font-weight: bold;
+	font-size: 22px;
+	color: #cb404a;
+	padding-top: 220px;
+	padding-right: 3%;
 }
 
-.hide i
+.bio .shadeed
 {
-	float: left;
-	margin-top: 3px;
-	margin-right: 3px;
+	background: url(../images/ahmad.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 27%;
+	height: 190px;
+	position: absolute;
+	margin-top: 15px;
+	margin-right: 1%;
 }
 
-.bio a 
+.bio p
 {
-	text-decoration: none;
-	color: #ababab;
+	font-family: "HelveticaNeue";
+	font-weight: lighter;
+	font-size: 14px;
+	padding-top: 12px;
+	padding-right: 3%;	
+	line-height: 20px;
+	color: #343434;
+}
+
+.bdesh h3 
+{
 	font-family: Roboto;
-	font-weight: normal;
-	font-size: 20px;
-}
-
-.bio a:hover
-{
-	color: #5187c4;
+	font-weight: lighter;
+	color: #fff;
+	text-align: center;
+	margin-top: 65px;
+	margin-left: 80px;
+	font-size: 25px;
+	width: 150px;
+	line-height: 1.4;
 }
 
 .bdesh
 {
 	z-index: 50;
 	background-color: #cb404a;
-    width: 287px;
+    width: 27%;
 	height: 190px;
 	position: absolute;
 	margin-top: 15px;
-	margin-left: 15px;	
-	opacity: 0.85;
+	margin-right: 1%;	
+	opacity: 0.65;
 	transition: opacity 0.25s;
 }
 
 .bdesh h3 
 {
-	font-family: Roboto;
-	font-weight: normal;
+	font-family: "HelveticaNeue";
+	font-weight: lighter;
 	color: #fff;
 	text-align: center;
 	margin-top: 65px;
-	margin-left: 75px;
+	margin-right: 93px;
 	font-size: 25px;
 	width: 140px;
 	line-height: 1.4;
@@ -290,9 +255,9 @@ footer p
 
 .bdesh i
 {
-	float: left;
+	float: right;
 	margin-top: 40px;
-	margin-left: 115px;
+	margin-right: 155px;
 	color: #fff;
 }
 
@@ -301,120 +266,14 @@ footer p
 	opacity: 1;
 }
 
-
-.bio .shadeed
-{
-	z-index: 10;
-	background: url(../images/ahmad.png);
-	background-repeat: no-repeat;
-	width: 287px;
-	height: 190px;
-	position: absolute;
-	margin-top: 15px;
-	margin-left: 15px;
-}
-
-.bio h1
-{
-	font-family: 'Roboto',sans-serif;
-	font-weight: bold;
-	font-size: 22px;
-	color: #cb404a;
-	padding-top: 220px;
-	padding-left: 15px;
-}
-
-.bio p
-{
-	font-family: 'Roboto',sans-serif;
-	font-weight: regular;
-	font-size: 14px;
-	padding-top: 12px;
-	padding-left: 15px;	
-	line-height: 20px;
-	color: #343434;
-}
-
-.social h1
-{
-	font-family: 'Roboto',sans-serif;
-	font-weight: bold;
-	font-size: 18px;
-	color: #5187c4;
-	padding-top: 20px;
-	padding-left: 15px;
-}
-
-.social ul li a
-{
-	padding: 40px 40px;
-	display: block;
-	margin: 1px;
-	float: left;
-	color: white;
-	text-decoration: none;
-	font-family: 'Roboto',sans-serif;
-	font-weight: regular;
-	font-size: 14px;
-	text-align: center;
-}
-
-.social ul li a:hover
-{
-	opacity: 0.85;
-	cursor: pointer;
-}
-
-.social i 
-{
-	font-size: 30px;
-	margin-right: 15px;
-}
-
-.social span 
-{
-	padding-top: 7px;
-}
-
-.social .facebook
-{
-	background-color: #3b5998;
-}
-
-.social .twitter
-{
-	background-color: #70a4cc;
-}
-
-.social .behance
-{
-	background-color: #1769ff;
-}
-
-.social .instagram
-{
-	background-color: #3f729b;
-}
-
-.social ul 
-{
-	margin-top: 25px;
-	margin-left: 10px;
-}
-
-.social ul li a
-{
-	width: 21%;
-}
-
 /*---------------------summary-----------------------*/
 
 .summary 
 {
-	float: left;
+	float: right;
 	min-height: 320px;
 	width: 320px;
-	margin-left: 20px;
+	margin-right: 20px;
 	background-color: white;
 	margin-top: 25px;
 	box-shadow: 0px 2px 0px #c9c9c9;
@@ -423,27 +282,27 @@ footer p
 .summary p
 {
 	float: left;
-	font-family: Roboto;
+	font-family: HelveticaNeue;
 	font-weight: lighter;
 	color: #6f6f6f;
-	font-size: 16px;
+	font-size: 17px;
 	margin-top: 15px;
 	padding-left: 15px;
 	padding-right: 20px;
-	line-height: 1.48;
+	line-height: 2;
 }
 
 .summary span
 {
-	font-family: Roboto;
-	font-weight: Bold;
+	font-family: HelveticaNeue;
+	font-weight: normal;
 	color: #5187c4;
 }
 
 .summary .top
 {
 	width: 100%;
-	float: left;
+	float: right;
 	margin-top: 15px;
 	border-bottom: 1px solid #cfcfcf;
 	z-index: 100;
@@ -452,12 +311,12 @@ footer p
 .summary .top h1 
 {
 	z-index: 200;
-	float: left;
-	font-family: 'Roboto',sans-serif;
+	float: right;
+	font-family: HelveticaNeue;
 	font-weight: normal;
 	color:#5187c4;
 	font-size: 22px;
-	margin-left: 15px;
+	margin-right: 15px;
 	margin-top: 3px;
 	border-bottom: 4px solid #5187c4;
 	padding-bottom: 13px;
@@ -467,10 +326,10 @@ footer p
 
 .education 
 {
-	float: left;
+	float: right;
 	min-height: 320px;
 	width: 320px;
-	margin-left: 20px;
+	margin-right: 20px;
 	background-color: white;
 	margin-top: 25px;
 	box-shadow: 0px 2px 0px #c9c9c9;
@@ -479,7 +338,7 @@ footer p
 .education .top
 {
 	width: 100%;
-	float: left;
+	float: right;
 	margin-top: 15px;
 	border-bottom: 1px solid #cfcfcf;
 	z-index: 100;
@@ -488,12 +347,12 @@ footer p
 .education .top h1 
 {
 	z-index: 200;
-	float: left;
-	font-family: 'Roboto',sans-serif;
+	float: right;
+	font-family: HelveticaNeue;
 	font-weight: normal;
 	color:#84c451;
 	font-size: 22px;
-	margin-left: 15px;
+	margin-right: 15px;
 	margin-top: 3px;
 	border-bottom: 4px solid #84c451;
 	padding-bottom: 13px;
@@ -501,21 +360,29 @@ footer p
 
 .edu
 {
-	float: left;
-	margin-left: 15px;
+	float: right;
+	margin-right: 15px;
 	margin-top: 15px;
 	line-height: 1.35
 }
 
 .edu h1 
 {
-	font-family: Roboto;
-	font-weight: bold;
+	font-family: HelveticaNeue;
+	font-weight: normal;
 	font-size: 16px;
 	color: #84c451;
 }
 
-.edu h2, h3
+.edu h2
+{
+	font-family: HelveticaNeue;
+	font-weight: lighter;
+	font-size: 16px;
+	color: #6f6f6f;
+}
+
+.edu h3
 {
 	font-family: Roboto;
 	font-weight: lighter;
@@ -538,7 +405,7 @@ footer p
 .experience .top
 {
 	width: 100%;
-	float: left;
+	float: right;
 	margin-top: 15px;
 	border-bottom: 1px solid #cfcfcf;
 	z-index: 100;
@@ -547,12 +414,12 @@ footer p
 .experience .top h1 
 {
 	z-index: 200;
-	float: left;
-	font-family: 'Roboto',sans-serif;
-	font-weight: normal;
+	float: right;
+	font-family: HelveticaNeue;
+	font-weight: lighter;
 	color:#cb404a;
 	font-size: 22px;
-	margin-left: 15px;
+	margin-right: 15px;
 	margin-top: 3px;
 	border-bottom: 4px solid #cb404a;
 	padding-bottom: 13px;
@@ -560,23 +427,32 @@ footer p
 
 .exp
 {
-	float: left;
-	margin-left: 15px;
+	float: right;
+	margin-right: 15px;
 	margin-top: 15px;
-	line-height: 1.35
+	line-height: 1.35;
+	width:100%;
 }
 
 .exp h1 
 {
-	font-family: Roboto;
-	font-weight: bold;
+	font-family: HelveticaNeue;
+	font-weight: normal;
 	font-size: 16px;
 	color: #cb404a;
 }
 
-.exp h2, h3
+.exp h2
 {
-	font-family: Roboto;
+	font-family: HelveticaNeue;
+	font-weight: lighter;
+	font-size: 16px;
+	color: #6f6f6f;
+}
+
+.exp h3
+{
+	font-family: HelveticaNeue;
 	font-weight: lighter;
 	font-size: 16px;
 	color: #6f6f6f;
@@ -586,10 +462,10 @@ footer p
 
 .skills
 {
-	float: left;
+	float: right;
 	min-height: 320px;
 	width: 320px;
-	margin-left: 20px;
+	margin-right: 20px;
 	background-color: white;
 	margin-top: 25px;
 	box-shadow: 0px 2px 0px #c9c9c9;
@@ -607,12 +483,12 @@ footer p
 .skills .top h1 
 {
 	z-index: 200;
-	float: left;
-	font-family: 'Roboto',sans-serif;
+	float: right;
+	font-family: HelveticaNeue;
 	font-weight: normal;
 	color:#cb8b40;
 	font-size: 22px;
-	margin-left: 15px;
+	margin-right: 15px;
 	margin-top: 3px;
 	border-bottom: 4px solid #cb8b40;
 	padding-bottom: 13px;
@@ -620,16 +496,16 @@ footer p
 
 .skills .sk-list
 {
-	float: left;
-	margin-left: 15px;
+	float: right;
+	margin-right: 15px;
 	margin-top: 15px;
 }
 
 .colored 
 {
 	position: relative;
-	float: left;
-	height: 22px;
+	float: right;
+	height: 32px;
 	/* width: 270px; This is the maximum value.. */
 	padding: 5px;
 	margin-bottom: 1px;
@@ -674,8 +550,8 @@ footer p
 .grey 
 {
 	z-index: 10;
-	height: 22px;
-	width: 270px;
+	height: 32px;
+	width: 320px;
 	padding: 5px;
 	background-color: #eaeaea;
 	margin-bottom: 1px;
@@ -683,50 +559,48 @@ footer p
 
 .sk:nth-child(even) .colored
 {
-	border-left: 4px solid #699C40;
+	border-right: 4px solid #699C40;
 	background-color: #84c451;
 }
 
 .sk:nth-child(odd) .colored
 {
-	border-left: 4px solid #356192;
+	border-right: 4px solid #356192;
 	background-color: #5187c4;
 }
 
 .sk span
 {
-	float: left;
+	float: right;
 	margin-top: 3px;
 	margin-left: 3px;
-	font-family: Roboto;
+	font-family: HelveticaNeue;
 	font-weight: lighter;
 	font-size: 15px;
 	color: #fff;
 }
 
-
 /*-------------quote1-------------*/
 
 .quote
 {
-	float: left;
+	float: right;
 	min-height: 320px;
 	width: 320px;
-	margin-left: 20px;
+	margin-right: 20px;
 	background-color: #5187c4;
 	margin-top: 25px;
 }
 
 .quote blockquote
 {
-	font-family: Roboto;
+	font-family: HelveticaNeue;
 	font-weight: lighter;
 	font-size: 25px;
 	color: #fff;
-	width: 250px;
+	width: 310px;
 	line-height: 1.5;
-	margin-top: 5px;
-	padding-left: 32px;
+	padding-right: 45px;
 	padding-top:30px;
 	text-align: center;
 }
@@ -751,7 +625,7 @@ blockquote i
 	-o-transform:rotate(180deg);
 	/* filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5); */
 	-ms-transform:rotate(180deg); 
-	margin-left: 34px;
+	margin-left: 50px;
 }
 
 .quote2 .bottom
@@ -789,7 +663,7 @@ blockquote i
 
 .quote .share
 {
-	margin-top: 25px;
+	margin-top: 55px;
 	width: 100%;
 	border-top: 1px solid #73A4DB;
 	padding-top: 12px;
@@ -797,7 +671,7 @@ blockquote i
 
 .quote2 .share
 {
-	margin-top: 25px;
+	margin-top: 60px;
 	width: 100%;
 	border-top: 1px solid #A6D87F;
 	padding-top: 12px;
@@ -815,7 +689,7 @@ blockquote i
 
 .share-meta
 {
-	margin-left: 30px;
+	margin-left: 55px;
 	margin-top: 5px;
 }
 
@@ -832,15 +706,15 @@ blockquote i
 
 .quote2 blockquote
 {
-	font-family: Roboto;
+	font-family: HelveticaNeue;
 	font-weight: lighter;
 	font-size: 25px;
 	color: #fff;
 	width: 250px;
+	width: 310px;
 	line-height: 1.5;
-	margin-top: 5px;
-	padding-left: 32px;
-	padding-top:60px;
+	padding-right: 45px;
+	padding-top:30px;
 	text-align: center;
 }
 
@@ -864,7 +738,7 @@ blockquote i
 	min-height: 320px;
 	width: 320px;
 	background-color: white;
-	margin-left: 20px;
+	margin-right: 20px;
 	margin-top: 25px;
 	box-shadow: 0px 2px 0px #c9c9c9;
 }
@@ -872,7 +746,7 @@ blockquote i
 .languages .top
 {
 	width: 100%;
-	float: left;
+	float: right;
 	margin-top: 15px;
 	border-bottom: 1px solid #cfcfcf;
 	z-index: 100;
@@ -881,12 +755,12 @@ blockquote i
 .languages .top h1 
 {
 	z-index: 200;
-	float: left;
-	font-family: 'Roboto',sans-serif;
+	float: right;
+	font-family: HelveticaNeue;
 	font-weight: normal;
 	color:#bd73e8;
 	font-size: 22px;
-	margin-left: 15px;
+	margin-right: 15px;
 	margin-top: 3px;
 	border-bottom: 4px solid #bd73e8;
 	padding-bottom: 13px;
@@ -894,23 +768,24 @@ blockquote i
 
 .lang
 {
-	float: left;
-	margin-left: 15px;
+	float: right;
+	margin-right: 15px;
 	margin-top: 15px;
-	line-height: 1.35
+	line-height: 1.35;
+	width: 100%;
 }
 
 .lang h1 
 {
-	font-family: Roboto;
-	font-weight: bold;
+	font-family: HelveticaNeue;
+	font-weight: normal;
 	font-size: 16px;
 	color: #bd73e8;
 }
 
 .lang h2
 {
-	font-family: Roboto;
+	font-family: HelveticaNeue;
 	font-weight: lighter;
 	font-size: 16px;
 	color: #6f6f6f;
@@ -924,7 +799,7 @@ blockquote i
 	min-height: 320px;
 	width: 320px;
 	background-color: white;
-	margin-left: 20px;
+	margin-right: 20px;
 	margin-top: 25px;
 	box-shadow: 0px 2px 0px #c9c9c9;
 }
@@ -941,12 +816,12 @@ blockquote i
 .references .top h1 
 {
 	z-index: 200;
-	float: left;
-	font-family: 'Roboto',sans-serif;
+	float: right;
+	font-family: HelveticaNeue;
 	font-weight: normal;
 	color:#5d5d5d;
 	font-size: 22px;
-	margin-left: 15px;
+	margin-right: 15px;
 	margin-top: 3px;
 	border-bottom: 4px solid #5d5d5d;
 	padding-bottom: 13px;
@@ -954,23 +829,23 @@ blockquote i
 
 .ref
 {
-	float: left;
-	margin-left: 15px;
+	float: right;
+	margin-right: 15px;
 	margin-top: 15px;
 	line-height: 1.35;
 }
 
 .ref h1 
 {
-	font-family: Roboto;
-	font-weight: bold;
+	font-family: HelveticaNeue;
+	font-weight: normal;
 	font-size: 16px;
 	color: #5d5d5d;
 }
 
 .ref h2,h3
 {
-	font-family: Roboto;
+	font-family: HelveticaNeue;
 	font-weight: lighter;
 	font-size: 16px;
 	color: #6f6f6f;
@@ -978,16 +853,15 @@ blockquote i
 
 .ref h3 
 {
-	float: left;
+	float: right;
 }
 
 .ref i
 {
-	float: left;
+	float: right;
 }
 
 .email
 {
-	float: left;
+	float: right;
 }
-

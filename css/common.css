@@ -1,0 +1,724 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**********************************************************************/
+/*iShadeed Blog*/
+/**********************************************************************/
+
+*
+{
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+@font-face
+{
+	font-family: Roboto, sans-serif;
+    font-weight: normal;
+}
+
+
+@font-face
+{
+	font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+@font-face 
+{
+    font-family: "HelveticaNeue";
+    src: url("../fonts/arabic/HelveticaNeueW23forSKY-Reg.eot");
+    src: url("../fonts/arabic/HelveticaNeueW23forSKY-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/arabic/HelveticaNeueW23forSKY-Reg.woff") format("woff"), url("../fonts/arabic/HelveticaNeueW23forSKY-Reg.ttf") format("truetype"), url("../fonts/arabic/HelveticaNeueW23forSKY-Reg.svg#HelveticaNeueLTArabic55Roman") format("svg");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: "HelveticaNeue";
+    src: url("../fonts/arabic/HelveticaNeueW23forSKY-Bd.eot");
+    src: url("../fonts/arabic/HelveticaNeueW23forSKY-Bd.eot?#iefix") format("embedded-opentype"), url("../fonts/arabic/HelveticaNeueW23forSKY-Bd.woff") format("woff"), url("../fonts/arabic/HelveticaNeueW23forSKY-Bd.ttf") format("truetype"), url("../fonts/arabic/HelveticaNeueW23forSKY-Bd.svg#HelveticaNeueLTArabic55Roman") format("svg");
+    font-weight: 400;
+}
+
+.container
+{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 40px;
+	height:auto;
+	margin-bottom: 20px;
+}
+
+.row
+{
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+.container .column
+{
+	float: left;
+}
+
+.container .column-margin
+{
+	margin-left: 2%;
+}
+
+.row .one:nth-child(6)
+{
+	margin-right: 0;
+}
+
+.row .two:nth-child(3)
+{
+	margin-right: 0;
+}
+
+.row .three:nth-child(2)
+{
+	margin-right: 0;
+}
+
+.row .four
+{
+	margin-right: 0;
+}
+
+.container .column.one { width:15%; }
+.container .column.two { width:32%; }
+.container .column.three { width:49%; }
+.container .column.four { width:66%; }
+.container .column.six { width:100%; }
+
+.menu-toggle
+{
+	display: none;
+}
+
+@media screen and (max-width: 1028px){
+	.project1
+	{
+		width: 43%;
+	}
+	.bio .shadeed
+	{
+		width: 25.6%;
+	}
+
+	.bio .bdesh
+	{
+		width: 25.6%;
+	}
+}
+
+/*@media screen and (min-width: 1038px) {
+	.container .column.four { 
+		width:49.5%; 
+	}
+}*/
+
+@media (max-width:1038px) and (min-width:631px) {
+	.container .column.four { 
+		width:49%; 
+	}
+}
+
+@media screen and (max-width: 1038px) {
+	.container .column.two { 
+		width:48.7%; 
+	}
+
+	.skills 
+	{
+		margin-left: 0;
+	}
+
+	.education, .references
+	{
+		margin-left: 0;
+	}
+
+	.experience, .quote
+	{
+		margin-left: 20px;
+	}
+}
+
+
+
+
+
+@media (max-width:900px) and (min-width:631px) {
+
+	.share span
+	{
+		display: none;
+	}
+
+	.container .column.two { 
+		width:48.7%; 
+	}
+
+	.skills 
+	{
+		margin-left: 0;
+	}
+
+	.education, .references
+	{
+		margin-left: 0;
+	}
+
+	.experience, .quote
+	{
+		margin-left: 20px;
+	}
+
+	.bdesh h3 
+	{
+		font-family: Roboto;
+		font-weight: lighter;
+		color: #fff;
+		text-align: center;
+		margin-top: 65px;
+		margin-left: 80px;
+		font-size: 25px;
+		width: 150px;
+		line-height: 1.4;
+	}
+
+	.project1
+	{
+		width: 88%;
+	}
+	.bio .shadeed
+	{
+		width: 25.6%;
+	}
+
+	.bio .bdesh
+	{
+		width: 25.6%;
+	}
+}
+
+@media (max-width:868px) and (min-width:631px) {
+	.container .column.two { 
+		width:48.5%; 
+	}
+
+	.skills 
+	{
+		margin-left: 0;
+	}
+
+	.education, .references
+	{
+		margin-left: 0;
+	}
+
+	.experience, .quote
+	{
+		margin-left: 20px;
+	}
+
+
+}
+
+
+@media (max-width:630px) and (min-width:502px) {
+	.project1
+	{
+		width: 88%;
+	}
+
+
+}
+
+
+
+@media screen and (max-width: 630px){
+
+	.share span
+	{
+		display: none;
+	}
+
+	.skills, .education, .references, .experience, .quote, .summary, .languages
+	{
+		margin-left: 0;
+	}
+
+	.profile h2
+	{
+		width: 38%;
+		line-height: 1.5;
+	}
+
+	.text 
+	{
+		width: 70%;
+	}
+
+	.v-line
+	{
+		height: 100%;
+	}
+
+	.about
+	{
+		height: 805px;
+	}
+
+	.title
+	{
+		margin-bottom: 15px;
+	}
+
+	.bdesh h3 
+	{
+		font-family: Roboto;
+		font-weight: lighter;
+		color: #fff;
+		text-align: center;
+		margin-top: 20%;
+		margin-left: 25%;
+		font-size: 25px;
+		width: 150px;
+		line-height: 1.4;
+	}
+	.container .column.two { 
+		width:100%; 
+		font-size: 0.6em; 
+	}
+
+	.main 
+	{
+		height: auto;
+		padding-bottom: 8%;
+	}
+
+	.container .column.four { 
+		width:100%; 
+		/*font-size: 0.6em;*/
+		margin-bottom: 8%;
+	}
+
+	.main .post-margin 
+	{
+		margin-top: 25px;
+	}
+
+	.project1 .thumbnail
+	{
+		width: 100%;
+	}
+
+	.project1
+	{
+		width: 88%;
+	}
+
+	.bio .shadeed
+	{
+		width: 82.5%;
+	}
+
+	.bio .bdesh
+	{
+		width: 82.5%;
+	}
+
+	.container .column-margin {
+		margin-left: 0;
+	}
+
+	.main
+	{
+		margin-top: 25px;
+	}
+
+	.twitter-widget
+	{
+		display: none;
+	}
+
+	.fb-plugin
+	{
+		display: none;
+	}
+
+	.menu ul 
+	{
+		position: relative;
+		z-index: 700;
+		width: 100%;
+		margin-top: 49px;
+		display: none;
+	}
+
+	.side .bio
+	{
+		z-index: 700;
+	}
+
+	.menu ul li
+	{
+		display: list-item;
+		clear: both;
+		float: left;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #4a4a4a;
+		background-color: #2c2c2c;
+		width: 100%;
+		text-align: center;
+	}
+
+	.menu ul li:hover
+	{
+		background-color: #020202;
+		width: 100%;
+		cursor: pointer;
+	}
+
+	.menu .li-active
+	{
+		background-color: #4a4a4a;
+		width: 100%;
+	}
+
+	.menu ul li a
+	{
+		text-decoration: none;
+		padding: 6px 14px 8px 0px;
+		color: #c5c5c5;
+	}
+
+	.menu ul li a:hover
+	{
+		text-decoration: none;
+		border-bottom: none;
+		color: #676767;
+	}
+
+	.menu .active
+	{
+		font-weight: normal;
+	    color: #c5c5c5;
+	    border-bottom: none;
+	}
+
+	.menu-toggle
+	{
+		text-decoration: none;
+		color: #000;
+		font-family: Roboto;
+		font-weight: normal;
+		font-size: 18px;
+		display: inline;
+		position: relative;
+		float: right;
+		padding-right: 20px;
+		padding-top: 25px;
+	}
+
+	/* Contact form */
+	form input[type="text"],input[type="email"]
+	{
+		font-family: 'Roboto',sans-serif;
+		font-weight: lighter;
+		height: 35px;
+		outline: none;
+		font-size: 16px;
+		color: #9f9f9f;
+		border: 2px solid #d5d5d5;
+		box-shadow: none;
+		margin-top: 7px;
+		padding-left: 8px;
+		padding-right: 8px;
+		width: 70%;
+	}
+
+	form input[type="text"]:focus
+	{
+		border: 2px solid #5187c4;
+		box-shadow: none;
+	}
+
+	form input[type="email"]:focus
+	{
+		border: 2px solid #5187c4;
+		box-shadow: none;
+	}
+
+	form textarea
+	{
+		font-family: 'Roboto',sans-serif;
+		font-weight: lighter;
+		outline: none;
+		font-size: 16px;
+		color: #9f9f9f;
+		border: 2px solid #d5d5d5;
+		box-shadow: none;
+		margin-top: 7px;
+		padding-left: 8px;
+		padding-right: 8px;
+		width: 90%;
+		transition:none;
+	}
+
+	form textarea:focus
+	{
+		border: 2px solid #5187c4;
+		width: 90%;
+	}
+
+}
+
+.clearfix:after,
+.container:after {
+   content: " "; 
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.clearfix,
+.container {
+   zoom:1;
+}
+
+
+
+/* My own style */
+
+.block1
+{
+	background-color: #000;
+	height: 300px;
+}
+
+/* common css */
+/*
+.side .social
+{
+	margin-top: 400px;
+	min-height: 360px;
+	background-color: red;
+	margin-top: 25px;
+	box-shadow: 0px 2px 0px #c9c9c9;
+}
+
+.bio .shadeed
+{
+	z-index: 10;
+	background: url(../images/ahmad.png);
+	background-size: auto 120%;
+	background-repeat: no-repeat;
+	width: 334px;
+	height: 190px;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+*/
+.bdesh
+{
+	z-index: 50;
+	background-color: #cb404a;
+    width: 334px;
+	height: 190px;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 15px;	
+	opacity: 0.65;
+	transition: opacity 0.25s;
+}
+
+
+footer
+{
+	margin-top: 20px;
+	margin-bottom: 25px;
+	height: 75px;
+	background-color: #fff;
+	box-shadow: 0px 2px 0px #c9c9c9;
+	text-align: center;
+}
+
+footer p 
+{
+	font-family: Roboto;
+	font-weight: normal;
+	padding-top: 28px;
+	color: #343434;
+}
+
+.arabic
+{
+	text-decoration: none;
+	color: #343434;
+	font-size: 18px;
+	font-family: "HelveticaNeue";
+	font-weight: lighter;
+}
+
+.arabic:hover 
+{
+	opacity: 0.75;
+}
+
+/* side */ 
+/*
+.side 
+{
+	width: 320px;
+	float: left;
+}*/
+
+
+.hide
+{
+	float: left;
+	margin-top:20px;
+	margin-left: 77px;
+}
+
+.hide i
+{
+	float: left;
+	margin-top: 3px;
+	margin-right: 3px;
+}
+
+.bio a 
+{
+	text-decoration: none;
+	color: #ababab;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.bio a:hover
+{
+	color: #5187c4;
+}
+
+.bdesh h3 
+{
+	font-family: Roboto;
+	font-weight: normal;
+	color: #fff;
+	text-align: center;
+	margin-top: 65px;
+	margin-left: 75px;
+	font-size: 25px;
+	width: 140px;
+	line-height: 1.4;
+}
+
+.bdesh i
+{
+	float: left;
+	margin-top: 40px;
+	margin-left: 115px;
+	color: #fff;
+}
+
+.bio a:hover .bdesh
+{
+	opacity: 1;
+}
+
+
+/* bio.shadeed */
+
+.bio h1
+{
+	font-family: 'Roboto',sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	color: #cb404a;
+	padding-top: 220px;
+	padding-left: 15px;
+}
+
+.bio .name
+{
+	font-family: 'Roboto',sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	color: #5187c4;
+	padding-top: 220px;
+	padding-left: 15px;
+}
+
+.bio p
+{
+	font-family: 'Roboto',sans-serif;
+	font-weight: regular;
+	font-size: 14px;
+	padding-top: 12px;
+	padding-left: 15px;	
+	line-height: 20px;
+	color: #343434;
+}
+
+
+
+
+
+

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl">
 <head>
 	<meta charset="utf-8">
 	<title>iShadeed Blog</title>
-	<link rel="stylesheet" type="text/css" href="css/cv.css">
-	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/common_ar.css">
+	<link rel="stylesheet" type="text/css" href="css/cv_ar.css">
 	<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
 	<link href='//fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
 	<script src="js/jquery-1.9.1.js"></script>
@@ -16,25 +16,13 @@
     if(height  > 105) {
         $('.post-progress').css("width","+=20");
     }
-    console.log('h'+height);
-    console.log('w'+width);
 });
-
 $(document).ready(function() {
-	$('.hide').on("click", function () {
-		//alert("hello");
-	    //$(this).hide();
-	    $('.bdesh').fadeIn(300);
-	    $('.bdesh').css("display","inline");
-	    //$('.bdesh-text').animate({font-size:"14px"});
-	});
 
-	/*$('.bdesh').on("click", function () {
-		//alert("hello");
-	    //$(this).hide();
-	    $(this).fadeOut();
-	    $('.bdesh').css("display","none");
-	});*/
+	$('.menu-toggle').on("click", function () {
+	    //$('.menu ul').css("display","block");
+	    $('.menu ul').slideToggle( "fast" );
+	});
 });
 
 </script>
@@ -50,16 +38,16 @@ $(document).ready(function() {
 </script>
 
 <div class="container">
-	<div class="menu">
+	<div class="menu column six">
 		<a href="index.html"><div class="logo"></div></a>
-		<a href="#" class="menu-toggle">Menu</a>
+		<a href="#" class="menu-toggle">القائمة</a>
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About me</a></li>
-			<li><a href="testimonials.html">Testimonials</a></li>
-			<li class="li-active"><a href="cv.html" class="active">My CV</a></li>
-			<li><a href="contact.html">Contact me</a></li>
-			<li><a href="ar/index.html" class="arabic">عربي</a></li>
+			<li><a href="index_ar.html">الرئيسية</a></li>
+			<li><a href="about_ar.html" >من أنا؟</a></li>
+			<li><a href="#">قالوا عني</a></li>
+			<li class="li-active"><a href="cv_ar.html" class="active">سيرتي الذاتية</a></li>
+			<li><a href="#">تواصل معي</a></li>
+			<li><a href="index.html" class="arabic">English</a></li>
 		</ul>
 	</div>
 
@@ -67,69 +55,69 @@ $(document).ready(function() {
 		<a href="http://www.google.com">
 			<div class="bdesh">
 				<i class="flaticon-download60"></i>
-				<h3 class="bdesh-text">Download as PDF</h3>
+				<h3 class="bdesh-text">حمّل السيرة الذاتية</h3>
 			</div>
 		</a>
 		<div class="shadeed"></div>
 		<div class="bio-meta">
-			<h1>Ahmad Shadeed</h1>
-			<p>Web and mobile designer. Interested in user experience and interaction design.</p>
+			<h1>أحمد شديد</h1>
+			<p>مصمم ويب وموبايل. مهتم في خبرة المستخدم والتصميم التفاعلي، أحب الألوان وأطمح بأن اكون مطور ومصمم.</p>
 	    </div> 
 	</div>
 
 	<div class="summary column two">
 		<div class="top">
-			<h1>Summary</h1>
+			<h1>لمحة سريعة</h1>
 		</div>
-		<p><span>Self taught, Fresh graduate, 22 years old</span> Designer from Palestine. Since my early childhood I loved the world of shapes and colors. I learnt to be a graphic designer because I have a strong insistence for learning new things. I see every design project as a problem that needs a solution. <span>Currently</span> I’m learning Frontend development and drawing!</p>
+		<p><span>مصمم ذاتي التعلم، خريج جديد، عمري 22 عام من فلسطين.</span> منذ الطفولة وهو يوجد لدي حب لعالم الرسم والالوان. أصبحت مصمماً لانه يوجد لدي رغبة قوية بتعلم الاشياء الجديدة، بحيث أرى كل مشروع عبارة عن مشكلة تحتاج إلى حل. <span>حاليا</span> اتعلم تصميم مواقع الانترنت والرسم!</p>
     </div>
 
     <div class="education column two">
 		<div class="top">
-			<h1>Education</h1>
+			<h1>التعليم</h1>
 		</div>
 		<div class="edu edu-item1">
-			<h1>Arab American University - Jenin</h1>
-			<h2>Bachalor of Multimedia Technology</h2>
+			<h1>الجامعة العربية الأمريكية - فلسطين</h1>
+			<h2>بكالوريس تكنولوجيا الوسائط المتعددة</h2>
 			<h3>(2010 - 2014)</h3>
 		</div>
 		<div class="edu edu-item1">
-			<h1>Illar Secondary Boys School</h1>
-			<h2>Tawjehe</h2>
+			<h1>شهادة الثانوية العامة</h1>
+			<h2>مدرسة ذكور علار الثانوية</h2>
 			<h3>(2006 - 2010)</h3>
 		</div>
     </div>
 
     <div class="experience column two">
 		<div class="top">
-			<h1>Experience</h1>
+			<h1>الخبرة</h1>
 		</div>
 		<div class="exp">
-			<h1>Product Designer</h1>
-			<h2>Wamda</h2>
-			<h3>(2014 - Present)</h3>
+			<h1>مصمم تطبيقات انترنت</h1>
+			<h2>ومضة</h2>
+			<h3>(2014 - حتى الان)</h3>
 		</div>
 		<div class="exp">
-			<h1>Freelancer Graphic Designer</h1>
+			<h1>مصمم مستقل</h1>
 			<h2>iShadeed</h2>
-			<h3>(2012 - Present)</h3>
+			<h3>(2010 - حتى الان)</h3>
 		</div>
     </div>
 
     <div class="skills column two">
 		<div class="top">
-			<h1>Skills</h1>
+			<h1>مهاراتي</h1>
 		</div>
 		<div class="sk-list">
 			<div class="sk">
 				<div class="colored ui">
-					<span>UI Design</span>
+					<span>تصميم واجهات الاستخدام</span>
 				</div>
 				<div class="grey"></div>
 			</div>
 			<div class="sk">
 				<div class="colored ux">
-					<span>UX Design</span>
+					<span>تصميم خبرة المستخدم</span>
 				</div>
 				<div class="grey"></div>
 			</div>
@@ -141,13 +129,13 @@ $(document).ready(function() {
 			</div>
 			<div class="sk">
 				<div class="colored ps">
-					<span>Photoshop</span>
+					<span>ادوبي فوتوشوب</span>
 				</div>
 				<div class="grey"></div>
 			</div>
 			<div class="sk">
 				<div class="colored mobile">
-					<span>Mobile Design</span>
+					<span>تصميم تطبيقات الجوال</span>
 				</div>
 				<div class="grey"></div>
 			</div>
@@ -169,7 +157,7 @@ $(document).ready(function() {
     <div class="quote column two">
 		<blockquote>
 		<i class="flaticon-quotes2"></i>
-		A good designer who can design and code at the same time <span> - Ahmad Shadeed</span>
+		الباب اللي بجيك منو ريح سدو واستريح <span>- احمد شديد</span>
 		<i class="flaticon-quotes2 bottom"></i>
 		</blockquote>
 		<div class="share">
@@ -188,7 +176,7 @@ $(document).ready(function() {
     <div class="quote2 column two">
 		<blockquote>
 		<i class="flaticon-quotes2"></i>
-		To be or not to be, that is the question <span> - Ahmad Shakespeare</span>
+		جاجة عفرت على راسها عفرت <span>- احمد شديد</span>
 		<i class="flaticon-quotes2 bottom"></i>
 		</blockquote>
 		<div class="share">
@@ -206,40 +194,37 @@ $(document).ready(function() {
 
     <div class="languages column two">
 		<div class="top">
-			<h1>Languages</h1>
+			<h1>اللغات</h1>
 		</div>
 		<div class="lang">
-			<h1>English</h1>
-			<h2>Limited working proficiency</h2>
+			<h1>الانجليزية</h1>
+			<h2>مستوى متوسط</h2>
 		</div>
 		<div class="lang">
-			<h1>Arabic</h1>
-			<h2>Native or bilingual proficiency</h2>
+			<h1>العربية</h1>
+			<h2>اللغة الأم</h2>
 		</div>
     </div>
 
     <div class="references column two">
 		<div class="top">
-			<h1>References</h1>
+			<h1>المراجع</h1>
 		</div>
 		<div class="ref">
-			<h1>Dr. Muath Sabha</h1>
-			<h2>Chairman of Multimedia Technology department</h2>
+			<h1>د. معاذ صبحة</h1>
+			<h2>رئيس قسم تكنولوجيا الوسائط المتعددة</h2>
 			<h3>msabha@gmail.com</h3>
 		</div>
 		<div class="ref">
-			<h1>Dr. Mohammad Maree</h1>
-			<h2>Assistant professor at Multimediy Technology department</h2>
-			<div class="email">
-				<i class="flaticon-close13"></i>
-				<h3>maree@gmail.com</h3>
-			</div>
+			<h1>د. محمد مرعي</h1>
+			<h2>أستاذ مشارك فس قسم الملتيميديا</h2>
+			<h3>m.maree@gmail.com</h3>
 		</div>
     </div>
 
 	<div class="clear"></div>
-	<footer>
-		<p>Thanks for reaching here :)</p>
+	<footer style="margin-top:20px; margin-bottom:20px;">
+		<p>شكرا على وصولك هنا :)</p>
 	</footer>
 </div>
 </body>

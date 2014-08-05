@@ -4,28 +4,56 @@
 	<meta charset="utf-8">
 	<title>iShadeed Blog</title>
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/flaticon.css">
 	<link href='//fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'> 
 	<script src="js/blog.js"></script>
+	<script src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('form input[type="text"],form input[type="email"], form textarea').focus(function() {
+	      $("label[for='" + this.id + "']").addClass("labelfocus");
+	    }).blur(function() {
+	      $("label.labelfocus").removeClass("labelfocus");
+	    });
+
+	    $('.menu-toggle').on("click", function () {
+		    //$('.menu ul').css("display","block");
+		    $('.menu ul').slideToggle( "fast" );
+		});
+	});
+	</script>
 </head>
 
 <body>
-<div class="wrapper">
+<div class="container">
 	<div class="menu">
 		<a href="index.html"><div class="logo"></div></a>
+		<a href="#" class="menu-toggle">Menu</a>
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About me</a></li>
 			<li><a href="testimonials.html">Testimonials</a></li>
 			<li><a href="cv.html">My CV</a></li>
-			<li><a href="contact.html" class="active">Contact me</a></li>
-			<a href="ar/index.html" class="arabic">عربي</a>
+			<li class="li-active"><a href="contact.html" class="active">Contact me</a></li>
+			<li><a href="ar/index.html" class="arabic">عربي</a></li>
 		</ul>
 	</div>
 
-	<div class="side">
+	<div class="side column two">
 		<div class="bio">
+			<div class="bdesh">
+				<h3 class="bdesh-text">I don't want to hide :P</h3>
+			</div>
 			<div class="shadeed"></div>
+			<div class="bio-meta">
+				<h1 class="name">Ahmad Shadeed</h1>
+				<p>Web and mobile designer. Interested in user experience and interaction design.</p>
+		    </div> 
+		    <a href="#" class="hide">
+		    	<i class="flaticon-left17" class="hide-icon"></i>
+		    	<span class="hide-text">Hide me</span>
+		    </a> 
 		</div>
 		<div class="social">
 			<h1>Follow Me</h1>
@@ -51,19 +79,19 @@
 	</div>
 
 	<h1 class="title">Contact me</h1>
-	<div class="contact">
+	<div class="contact column four column-margin">
 		<div class="text">
 			Drop me an email if you would like to work with me or just to say hello I’d love to hear from you :)
 	    </div>
 	    <form>
 				<label for="name">Your name</label>
-				<input type="text" id="name"></input>
+				<input type="text" id="name" required></input>
 				<label for="subject">Subject</label>
-				<input type="text" id="subject"></input>
+				<input type="text" id="subject" required></input>
 				<label for="email">Your email</label>
-				<input type="text" id="email"></input>
+				<input type="email" id="email" required></input>
 				<label for="message">What's on your mind?</label>
-				<textarea rows=8 cols = 45 id="message"></textarea>
+				<textarea rows=8 cols = 45 id="message" required></textarea>
 				<input type="submit" value="Send"></button>
 		</form>
 	</div>

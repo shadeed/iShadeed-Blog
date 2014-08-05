@@ -4,11 +4,10 @@
 	<meta charset="utf-8">
 	<title>iShadeed Blog</title>
 	<link rel="stylesheet" type="text/css" href="css/post.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
 	<link href='//fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script src="js/mousewheel/jquery.mousewheel.js"></script>
-	<script src="js/blog.js"></script>
+	<script src="js/jquery-1.9.1.js"></script>
 </head>
 <body>
 
@@ -23,20 +22,20 @@
 </script>
 
 <div class="post-progress"></div>
-<div class="wrapper">
+<div class="container" style="display: table;">
 	<div class="menu">
 		<a href="index.html"><div class="logo"></div></a>
 		<ul>
-			<li><a href="index.html">Home</a></li>
+			<li class="li-active"><a href="index.html" class="active">Home</a></li>
 			<li><a href="about.html">About me</a></li>
 			<li><a href="testimonials.html">Testimonials</a></li>
 			<li><a href="cv.html">My CV</a></li>
 			<li><a href="contact.html">Contact me</a></li>
-			<a href="ar/index.html" class="arabic">عربي</a>
+			<li><a href="ar/index.html" class="arabic">عربي</a></li>
 		</ul>
 	</div>
 
-	<div class="side">
+	<div class="side column two" style="display: table-footer-group;">
 		<div class="bio">
 			<div class="shadeed"></div>
 			<h1>Ahmad Shadeed</h1>
@@ -101,7 +100,7 @@
 
 		</div>
 	</div>
-	<div class="main">
+	<div class="main post-margin column four column-margin" style="display: table-header-group;">
 		<div class="post">
 			<div class="post-thumb"></div>
 			<h1 class="post-title">
@@ -175,7 +174,7 @@
 
 			<div class="share">
 				<div class="share-content">
-					<p>Share the article</p>
+					<p>Share</p>
 					<a href="//www.facebook.com/share.php?u=[www.ishadeed.com]&title=[iShadeed Blog]" class="facebook-share" target="_blank">
 	                     <i class="flaticon-circle6"></i>
 	                     <span>Share</span>

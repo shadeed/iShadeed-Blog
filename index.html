@@ -4,11 +4,10 @@
 	<meta charset="utf-8">
 	<title>iShadeed Blog</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
 	<link href='//fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
 	<script src="js/jquery-1.9.1.js"></script>
-	<script src="js/jquery.flip.min.js"></script>
-	<script src="js/jquery.flip.js"></script>
 </head>
 <script type="text/javascript">
 	$(window).scroll(function() {
@@ -17,8 +16,6 @@
     if(height  > 105) {
         $('.post-progress').css("width","+=20");
     }
-    console.log('h'+height);
-    console.log('w'+width);
 });
 
 $(document).ready(function() {
@@ -75,6 +72,17 @@ $(document).ready(function() {
 	    //$('.bdesh-text').animate({font-size:"14px"});
 	});
 
+	$('.menu-toggle').on("click", function () {
+	    //$('.menu ul').css("display","block");
+	    $('.menu ul').slideToggle( "fast" );
+	});
+
+	/*var windowsize = $(window).width();
+	if(windowsize > 630)
+	{
+		alert("ffdf");
+	}*/
+
 	$('.bdesh').on("click", function () {
 		//alert("hello");
 	    //$(this).hide();
@@ -84,7 +92,7 @@ $(document).ready(function() {
 });
 
 </script>
-<body>
+<body style="overflow-x:hidden;">
 
 <div id="openModal" class="modalDialog">
 	<div id="modalbox">
@@ -106,27 +114,28 @@ $(document).ready(function() {
 }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<div class="wrapper">
-	<div class="menu">
+<div class="container">
+	<div class="menu column six">
 		<a href="index.html"><div class="logo"></div></a>
+		<a href="#" class="menu-toggle">Menu</a>
 		<ul>
-			<li><a href="index.html" class="active">Home</a></li>
+			<li class="li-active"><a href="index.html" class="active">Home</a></li>
 			<li><a href="about.html">About me</a></li>
 			<li><a href="testimonials.html">Testimonials</a></li>
 			<li><a href="cv.html">My CV</a></li>
 			<li><a href="contact.html">Contact me</a></li>
-			<a href="ar/index.html" class="arabic">عربي</a>
+			<li><a href="index_ar.html" class="arabic">عربي</a></li>
 		</ul>
 	</div>
 
-	<div class="side">
+	<div class="side column two">
 		<div class="bio">
 			<div class="bdesh">
 				<h3 class="bdesh-text">I don't want to hide :P</h3>
 			</div>
 			<div class="shadeed"></div>
 			<div class="bio-meta">
-				<h1>Ahmad Shadeed</h1>
+				<h1 class="name">Ahmad Shadeed</h1>
 				<p>Web and mobile designer. Interested in user experience and interaction design.</p>
 		    </div> 
 		    <a href="#" class="hide">
@@ -164,7 +173,7 @@ $(document).ready(function() {
          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</div>
 	</div>
-	<div class="main">
+	<div class="main column four column-margin">
 		<ul>
 			<li class="t1"><a href="#" style="color:#5187c4;" class="portfolio-tab">Portfolio</a></li>
 			<li class="t2"><a href="#" class="blog-tab">Blogs</a></li>
@@ -255,26 +264,24 @@ $(document).ready(function() {
 		</div>
 
 		<div class="portfolio">
-			<div class="project-modal">
-				<a href="#openModal" id="projectclick">
+			<div class="project1">
+				<a href="#">
 				<div class="thumbnail"></div>
 				<div class="meta">
-					<h1>View project modal</h1>
+					<h1>Instagram Redesign</h1>
 					<p>This is an example text, just to fill up this white area. Thanks for reading! :P</p>
 				</div>
 				</a>
 			</div>
-
-			<div class="project-post">
-				<a href="post.html">
+			<div class="project1">
+				<a href="#">
 				<div class="thumbnail"></div>
 				<div class="meta">
-					<h1>Open blog post</h1>
+					<h1>Instagram Redesign</h1>
 					<p>This is an example text, just to fill up this white area. Thanks for reading! :P</p>
 				</div>
 				</a>
 			</div>
-
 			<div class="project1">
 				<a href="#">
 				<div class="thumbnail"></div>
@@ -317,7 +324,7 @@ $(document).ready(function() {
 		</div>
 	</div>
 	<div class="clear"></div>
-	<footer>
+	<footer style="margin-top:20px; margin-bottom:20px;">
 		<p>Thanks for reaching here :)</p>
 	</footer>
 </div>

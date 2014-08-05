@@ -101,44 +101,9 @@ body
 	box-shadow: 0px 2px 0px #c9c9c9;
 }
 
-.arabic
-{
-	text-decoration: none;
-	color: #343434;
-	float: right;
-	margin-right: 25px;
-	font-size: 18px;
-	font-family: "HelveticaNeue";
-	font-weight: 100;
-	font-style: normal;
-}
-
-.arabic:hover 
-{
-	opacity: 0.75;
-}
-
 .clear
 {
 	clear: both;
-}
-
-footer
-{
-	margin-top: 25px;
-	margin-bottom: 25px;
-	height: 75px;
-	background-color: white;
-	box-shadow: 0px 2px 0px #c9c9c9;
-	font-family: 'Roboto',sans-serif;
-	font-weight: regular;
-	text-align: center;
-}
-
-footer p 
-{
-	padding-top: 28px;
-	color: #343434;
 }
 
 .logo
@@ -211,200 +176,30 @@ footer p
 .menu ul li a:hover
 {
 	padding: 6px 14px 8px 14px;
-	font-weight: bold;
     color: #5187c4;
     border-bottom: 2px solid;
 	transition: border-bottom 0.3s;
 	-webkit-transition: border-bottom 0.3s;
 }
 
-.side 
-{
-	width: 320px;
-	float: left;
-}
+/* ----------------------Bio-----------------------*/
 
-.bio
+.bio 
 {
-	float: left;
-	width: 320px;
 	min-height: 320px;
-	background-color: white;
+	background-color: #fff;
 	margin-top: 25px;
 	box-shadow: 0px 2px 0px #c9c9c9;
 }
 
-.hide
-{
-	float: left;
-	margin-top:20px;
-	margin-left: 77px;
-}
-
-.hide i
-{
-	float: left;
-	margin-top: 3px;
-	margin-right: 3px;
-}
-
-.bio a 
-{
-	text-decoration: none;
-	color: #ababab;
-	font-family: Roboto;
-	font-weight: normal;
-	font-size: 20px;
-}
-
-.bio a:hover
-{
-	color: #5187c4;
-}
-
-.bdesh
-{
-	z-index: 50;
-	background-color: #cb404a;
-    width: 287px;
-	height: 190px;
-	position: absolute;
-	margin-top: 15px;
-	margin-left: 15px;	
-	opacity: 0.85;
-	transition: opacity 0.25s;
-}
-
-.bdesh h3 
-{
-	font-family: Roboto;
-	font-weight: normal;
-	color: #fff;
-	text-align: center;
-	margin-top: 65px;
-	margin-left: 75px;
-	font-size: 25px;
-	width: 140px;
-	line-height: 1.4;
-}
-
-.bdesh i
-{
-	float: left;
-	margin-top: 40px;
-	margin-left: 115px;
-	color: #fff;
-}
-
-.bio a:hover .bdesh
-{
-	opacity: 1;
-}
-
-
 .bio .shadeed
 {
 	z-index: 10;
-	background: url(../images/ahmad.png);
-	background-repeat: no-repeat;
-	width: 287px;
-	height: 190px;
+	background: url(../images/ahmad.png) no-repeat;
+	background-size: auto 118%;
 	position: absolute;
 	margin-top: 15px;
 	margin-left: 15px;
-}
-
-.bio h1
-{
-	font-family: 'Roboto',sans-serif;
-	font-weight: bold;
-	font-size: 22px;
-	color: #cb404a;
-	padding-top: 220px;
-	padding-left: 15px;
-}
-
-.bio p
-{
-	font-family: 'Roboto',sans-serif;
-	font-weight: regular;
-	font-size: 14px;
-	padding-top: 12px;
-	padding-left: 15px;	
-	line-height: 20px;
-	color: #343434;
-}
-
-.social h1
-{
-	font-family: 'Roboto',sans-serif;
-	font-weight: bold;
-	font-size: 18px;
-	color: #5187c4;
-	padding-top: 20px;
-	padding-left: 15px;
-}
-
-.social ul li a
-{
-	padding: 40px 40px;
-	display: block;
-	margin: 1px;
-	float: left;
-	color: white;
-	text-decoration: none;
-	font-family: 'Roboto',sans-serif;
-	font-weight: regular;
-	font-size: 14px;
-	text-align: center;
-}
-
-.social ul li a:hover
-{
-	opacity: 0.85;
-	cursor: pointer;
-}
-
-.social i 
-{
-	font-size: 30px;
-	margin-right: 15px;
-}
-
-.social span 
-{
-	padding-top: 7px;
-}
-
-.social .facebook
-{
-	background-color: #3b5998;
-}
-
-.social .twitter
-{
-	background-color: #70a4cc;
-}
-
-.social .behance
-{
-	background-color: #1769ff;
-}
-
-.social .instagram
-{
-	background-color: #3f729b;
-}
-
-.social ul 
-{
-	margin-top: 25px;
-	margin-left: 10px;
-}
-
-.social ul li a
-{
-	width: 21%;
 }
 
 /*---------------------summary-----------------------*/
@@ -515,7 +310,15 @@ footer p
 	color: #84c451;
 }
 
-.edu h2, h3
+.edu h2
+{
+	font-family: Roboto;
+	font-weight: lighter;
+	font-size: 16px;
+	color: #6f6f6f;
+}
+
+.edu h3
 {
 	font-family: Roboto;
 	font-weight: lighter;
@@ -563,7 +366,8 @@ footer p
 	float: left;
 	margin-left: 15px;
 	margin-top: 15px;
-	line-height: 1.35
+	line-height: 1.35;
+	width:100%;
 }
 
 .exp h1 
@@ -574,7 +378,15 @@ footer p
 	color: #cb404a;
 }
 
-.exp h2, h3
+.exp h2
+{
+	font-family: Roboto;
+	font-weight: lighter;
+	font-size: 16px;
+	color: #6f6f6f;
+}
+
+.exp h3
 {
 	font-family: Roboto;
 	font-weight: lighter;
@@ -629,7 +441,7 @@ footer p
 {
 	position: relative;
 	float: left;
-	height: 22px;
+	height: 32px;
 	/* width: 270px; This is the maximum value.. */
 	padding: 5px;
 	margin-bottom: 1px;
@@ -674,8 +486,8 @@ footer p
 .grey 
 {
 	z-index: 10;
-	height: 22px;
-	width: 270px;
+	height: 32px;
+	width: 320px;
 	padding: 5px;
 	background-color: #eaeaea;
 	margin-bottom: 1px;
@@ -723,10 +535,9 @@ footer p
 	font-weight: lighter;
 	font-size: 25px;
 	color: #fff;
-	width: 250px;
+	width: 310px;
 	line-height: 1.5;
-	margin-top: 5px;
-	padding-left: 32px;
+	padding-left: 45px;
 	padding-top:30px;
 	text-align: center;
 }
@@ -751,7 +562,7 @@ blockquote i
 	-o-transform:rotate(180deg);
 	/* filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5); */
 	-ms-transform:rotate(180deg); 
-	margin-left: 34px;
+	margin-left: 50px;
 }
 
 .quote2 .bottom
@@ -797,7 +608,7 @@ blockquote i
 
 .quote2 .share
 {
-	margin-top: 25px;
+	margin-top: 60px;
 	width: 100%;
 	border-top: 1px solid #A6D87F;
 	padding-top: 12px;
@@ -815,7 +626,7 @@ blockquote i
 
 .share-meta
 {
-	margin-left: 30px;
+	margin-left: 55px;
 	margin-top: 5px;
 }
 
@@ -837,10 +648,10 @@ blockquote i
 	font-size: 25px;
 	color: #fff;
 	width: 250px;
+	width: 310px;
 	line-height: 1.5;
-	margin-top: 5px;
-	padding-left: 32px;
-	padding-top:60px;
+	padding-left: 45px;
+	padding-top:30px;
 	text-align: center;
 }
 

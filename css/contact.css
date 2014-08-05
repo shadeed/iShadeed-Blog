@@ -51,36 +51,6 @@ table {
 /*iShadeed Blog*/
 /**********************************************************************/
 
-@font-face
-{
-	font-family: Roboto, sans-serif;
-    font-weight: normal;
-}
-
-
-@font-face
-{
-	font-family: Roboto, sans-serif;
-    font-weight: bold;
-}
-
-@font-face 
-{
-    font-family: "HelveticaNeue";
-    src: url("../fonts/arabic/HelveticaNeueW23forSKY-Reg.eot");
-    src: url("../fonts/arabic/HelveticaNeueW23forSKY-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/arabic/HelveticaNeueW23forSKY-Reg.woff") format("woff"), url("../fonts/arabic/HelveticaNeueW23forSKY-Reg.ttf") format("truetype"), url("../fonts/arabic/HelveticaNeueW23forSKY-Reg.svg#HelveticaNeueLTArabic55Roman") format("svg");
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face 
-{
-    font-family: "HelveticaNeue";
-    src: url("../fonts/arabic/HelveticaNeueW23forSKY-Bd.eot");
-    src: url("../fonts/arabic/HelveticaNeueW23forSKY-Bd.eot?#iefix") format("embedded-opentype"), url("../fonts/arabic/HelveticaNeueW23forSKY-Bd.woff") format("woff"), url("../fonts/arabic/HelveticaNeueW23forSKY-Bd.ttf") format("truetype"), url("../fonts/arabic/HelveticaNeueW23forSKY-Bd.svg#HelveticaNeueLTArabic55Roman") format("svg");
-    font-weight: 400;
-}
-
 body 
 {
 	background-color: #e4e4e4;
@@ -101,43 +71,9 @@ body
 	box-shadow: 0px 2px 0px #c9c9c9;
 }
 
-.arabic
-{
-	text-decoration: none;
-	color: #343434;
-	float: right;
-	margin-right: 25px;
-	font-size: 18px;
-	font-family: "HelveticaNeue";
-	font-weight: 100;
-	font-style: normal;
-}
-
-.arabic:hover 
-{
-	opacity: 0.75;
-}
-
 .clear
 {
 	clear: both;
-}
-
-footer
-{
-	margin-top: 25px;
-	height: 75px;
-	background-color: white;
-	box-shadow: 0px 2px 0px #c9c9c9;
-	font-family: 'Roboto',sans-serif;
-	font-weight: regular;
-	text-align: center;
-}
-
-footer p 
-{
-	padding-top: 28px;
-	color: #343434;
 }
 
 .logo
@@ -173,21 +109,17 @@ footer p
 
 .menu .active
 {
-
-	background-color: #5187c4;
-	padding: 6px 14px 8px 14px;
-	color: white;
-	border-bottom: 2px solid rgb(80, 110, 155);
+	font-weight: bold;
+    color: #5187c4;
+    border-bottom: 2px solid;
 }
 
 .menu ul li a:hover
 {
-	background-color: #ededed;
 	padding: 6px 14px 8px 14px;
-	border-bottom: 2px solid #a0a0a0;
-	transition: background-color 0.5s;
+    color: #5187c4;
+    border-bottom: 2px solid;
 	transition: border-bottom 0.3s;
-	-webkit-transition: background-color 0.5s;
 	-webkit-transition: border-bottom 0.3s;
 }
 
@@ -199,10 +131,56 @@ footer p
 
 .side .bio
 {
-	min-height: 220px;
+	min-height: 375px;
 	background-color: white;
 	margin-top: 25px;
 	box-shadow: 0px 2px 0px #c9c9c9;
+}
+
+.bdesh
+{
+	display: none;
+	z-index: 50;
+	background-color: #5187c4;
+    width: 26.5%;
+	height: 190px;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 15px;	
+	opacity: 0.95;
+}
+
+.bdesh h3 
+{
+	font-family: Roboto;
+	font-weight: lighter;
+	color: #fff;
+	text-align: center;
+	margin-top: 65px;
+	margin-left: 80px;
+	font-size: 25px;
+	width: 150px;
+	line-height: 1.4;
+}
+
+.bio-meta
+{
+	border-bottom: 1px solid #cfcfcf;
+	padding-bottom: 15px;
+}
+
+.hide
+{
+	float: left;
+	margin-top:20px;
+	margin-left: 30%;
+}
+
+.hide i
+{
+	float: left;
+	margin-top: 3px;
+	margin-right: 3px;
 }
 
 .side .social
@@ -215,17 +193,16 @@ footer p
 
 .contact 
 {
+	float: left;
 	min-height: 600px;
-	width: 660px;
-	margin-left: 340px;
 	background-color: white;
-	margin-top: 65px;
+	margin-top: 15px;
 	box-shadow: 0px 2px 0px #c9c9c9;
 }
 
 .text 
 {
-	width: 615px;
+	width: 85%;
 	margin-left: 20px;
 	color: #343434;
 	font-family: 'Roboto',sans-serif;
@@ -236,7 +213,7 @@ footer p
 	float: left;
 }
 
-form
+.contact form
 {
 	margin-left: 20px;
 	float: left;
@@ -252,7 +229,7 @@ form label
 	margin-top: 20px;
 }
 
-form input[type="text"]
+form input[type="text"],input[type="email"]
 {
 	font-family: 'Roboto',sans-serif;
 	font-weight: lighter;
@@ -260,20 +237,34 @@ form input[type="text"]
 	outline: none;
 	font-size: 16px;
 	color: #9f9f9f;
-	border: 2px solid #d5d5d5;
+	/*border: 2px solid #d5d5d5;*/
+	box-shadow: 0px 2px 0px #d5d5d5;
+	border: none;
 	margin-top: 7px;
 	padding-left: 8px;
 	padding-right: 8px;
+	width: 50%;
+	transition:width 0.75s;
 }
 
 form input[type="text"]:focus
 {
 	border: 2px solid #5187c4;
+	box-shadow: 0px 2px 0px #5187c4;
+	width: 70%;
+	transition:width 0.5s;
 }
 
-input:focus + label
+form input[type="email"]:focus
 {
-	color: red;
+	border: 2px solid #5187c4;
+	box-shadow: 0px 2px 0px #5187c4;
+	width: 70%;
+	transition:width 0.5s;
+}
+
+.labelfocus { 
+	color:#5187c4; 
 }
 
 form textarea
@@ -283,15 +274,22 @@ form textarea
 	outline: none;
 	font-size: 16px;
 	color: #9f9f9f;
-	border: 2px solid #d5d5d5;
+	/*border: 2px solid #d5d5d5;*/
+	box-shadow: 0px 2px 0px #d5d5d5;
+	border: none;
 	margin-top: 7px;
 	padding-left: 8px;
 	padding-right: 8px;
+	width: 80%;
+	transition:width 0.75s;
 }
 
 form textarea:focus
 {
 	border: 2px solid #5187c4;
+	box-shadow: 0px 2px 0px #5187c4;
+	width: 100%;
+	transition:width 0.75s;
 }
 
 form input[type="submit"]
@@ -341,6 +339,20 @@ form input[type="submit"]:hover
 	margin-top: 15px;
 	margin-left: 15px;
 }
+
+
+.bio p
+{
+	font-family: 'Roboto',sans-serif;
+	font-weight: regular;
+	font-size: 14px;
+	padding-top: 12px;
+	padding-right: 15px;	
+	padding-left: 15px;	
+	line-height: 20px;
+	color: #343434;
+}
+
 
 .social h1
 {
@@ -411,7 +423,7 @@ form input[type="submit"]:hover
 
 .social ul li a
 {
-	width: 21%;
+	width: 45%;
 }
 
 

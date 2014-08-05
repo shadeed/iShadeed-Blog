@@ -51,16 +51,6 @@ table {
 /*iShadeed Blog*/
 /**********************************************************************/
 
-/*@font-face
-{
-	font-family: Roboto-Regular;
-}
-
-@font-face
-{
-	font-family: Roboto-Bold;
-}*/
-
 @font-face
 {
 	font-family: Roboto, sans-serif;
@@ -72,12 +62,6 @@ table {
 {
 	font-family: Roboto, sans-serif;
     font-weight: bold;
-}
-
-@font-face
-{
-	font-family: Roboto, sans-serif;
-    font-weight: lighter;
 }
 
 @font-face 
@@ -102,59 +86,63 @@ body
 	background-color: #e4e4e4;
 }
 
-.wrapper
-{
-	width:1000px;
-	margin: auto;
-	margin-top: 40px;
-	height:1320px;
-}
-
 .menu
 {
 	height: 75px;
 	background-color: white;
 	box-shadow: 0px 2px 0px #c9c9c9;
+	font-family: Roboto;
+	font-weight: normal;
+}
+
+.menu ul 
+{
+	margin-top: 25px;
+}
+
+.menu ul li
+{
+	display: inline;
+	padding-left: 19px;
+}
+
+.menu ul li a
+{
+	text-decoration: none;
+	color: #343434;
+	padding: 6px 14px 8px 14px;
+}
+
+.menu .active
+{
+
+	font-weight: bold;
+    color: #5187c4;
+    border-bottom: 2px solid;
+}
+
+.menu ul li a:hover
+{
+	padding: 6px 14px 8px 14px;
+    color: #5187c4;
+    border-bottom: 2px solid;
+	transition: border-bottom 0.3s;
+	-webkit-transition: border-bottom 0.3s;
 }
 
 .arabic
 {
 	text-decoration: none;
 	color: #343434;
-	float: right;
-	margin-right: 25px;
 	font-size: 18px;
 	font-family: "HelveticaNeue";
 	font-weight: 100;
 	font-style: normal;
 }
 
-.arabic:hover 
-{
-	opacity: 0.75;
-}
-
 .clear
 {
 	clear: both;
-}
-
-footer
-{
-	margin-top: 25px;
-	margin-bottom: 20px;
-	height: 75px;
-	background-color: white;
-	box-shadow: 0px 2px 0px #c9c9c9;
-	font-family: 'Roboto',sans-serif;
-	font-weight: regular;
-	text-align: center;
-}
-
-footer p 
-{
-	padding-top: 28px;
-	color: #343434;
 }
 
 .logo
@@ -168,45 +156,17 @@ footer p
 	margin-top: 22px;
 }
 
-.menu ul li
-{
-	display: inline;
-	padding-left: 19px;
-}
-
-.menu ul
+.title
 {
 	font-family: 'Roboto',sans-serif;
-	font-weight: regular;
-	padding-top: 26px;
+	font-weight: bold;
+	font-size: 22px;
+	color: #484848;
+	float: left;
+	margin-left: 22px;
+	margin-top: 25px;
 }
 
-.menu ul li a
-{
-	text-decoration: none;
-	color: #343434;
-	padding: 6px 14px 8px 14px;
-}
-
-.menu .active
-{
-
-	background-color: #5187c4;
-	padding: 6px 14px 8px 14px;
-	color: white;
-	border-bottom: 2px solid rgb(80, 110, 155);
-}
-
-.menu ul li a:hover
-{
-	background-color: #ededed;
-	padding: 6px 14px 8px 14px;
-	border-bottom: 2px solid #a0a0a0;
-	transition: background-color 0.5s;
-	transition: border-bottom 0.3s;
-	-webkit-transition: background-color 0.5s;
-	-webkit-transition: border-bottom 0.3s;
-}
 
 .side 
 {
@@ -216,10 +176,92 @@ footer p
 
 .side .bio
 {
-	min-height: 310px;
+	min-height: 375px;
 	background-color: white;
 	margin-top: 25px;
 	box-shadow: 0px 2px 0px #c9c9c9;
+}
+
+.bio-meta
+{
+	border-bottom: 1px solid #cfcfcf;
+	padding-bottom: 15px;
+}
+
+.hide
+{
+	float: left;
+	margin-top:20px;
+	margin-left: 30%;
+}
+
+.hide i
+{
+	float: left;
+	margin-top: 3px;
+	margin-right: 3px;
+}
+
+.bio a 
+{
+	text-decoration: none;
+	color: #ababab;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.bio a:hover
+{
+	color: #5187c4;
+}
+
+.bdesh
+{
+	display: none;
+	z-index: 50;
+	background-color: #5187c4;
+    width: 26.5%;
+	height: 190px;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 15px;	
+	opacity: 0.95;
+}
+
+.bdesh h3 
+{
+	font-family: Roboto;
+	font-weight: lighter;
+	color: #fff;
+	text-align: center;
+	margin-top: 65px;
+	margin-left: 80px;
+	font-size: 25px;
+	width: 150px;
+	line-height: 1.4;
+}
+
+.side .fb-plugin
+{
+	min-height: 330px;
+	background-color: white;
+	margin-top: 25px;
+	box-shadow: 0px 2px 0px #c9c9c9;
+}
+
+.side .twitter-widget
+{
+	min-height: 450px;
+	background-color: white;
+	margin-top: 25px;
+	box-shadow: 0px 2px 0px #c9c9c9;
+}
+
+.fb-like-box
+{
+	margin-left: 12px;
+	margin-top: 15px;
 }
 
 .side .social
@@ -232,19 +274,19 @@ footer p
 
 .main 
 {
-	min-height: 1805px;
-	width: 660px;
-	margin-left: 340px;
+	min-height: 1100px;
+	/*margin-left: 340px;*/
 	background-color: white;
-	margin-top: 25px;
+	margin-top: 15px;
 	box-shadow: 0px 2px 0px #c9c9c9;
 }
 
 .bio .shadeed
 {
-	background: url(../images/ahmad.png);
-	background-repeat: no-repeat;
-	width: 287px;
+	z-index: 10;
+	background: url(../images/ahmad.png) no-repeat;
+	background-color: red;
+	width: 26.5%;
 	height: 190px;
 	position: absolute;
 	margin-top: 15px;
@@ -267,6 +309,7 @@ footer p
 	font-weight: regular;
 	font-size: 14px;
 	padding-top: 12px;
+	padding-right: 15px;	
 	padding-left: 15px;	
 	line-height: 20px;
 	color: #343434;
@@ -341,12 +384,13 @@ footer p
 
 .social ul li a
 {
-	width: 21%;
+	width: 45%;
 }
 
 /* 
 The main block
 */
+
 
 .thanks
 {
@@ -361,8 +405,8 @@ The main block
 
 .people
 {
-	width: 620px;
-	margin: auto;
+	width: 85%;
+	margin-left: 20px;
 	min-height: 200px;
 }
 
@@ -480,6 +524,8 @@ The main block
 	font-weight: lighter;
 	float: left;
 	margin-top: 4px;
+	width: 75%;
+	line-height: 1.5;
 }
 
 .profile
@@ -499,12 +545,3 @@ The main block
 	font-size: 16px;
 	line-height: 25px;
 }
-
-
-
-
-
-
-
-
-

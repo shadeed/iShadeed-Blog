@@ -91,6 +91,12 @@ table {
     font-weight: 400;
 }
 
+@media (max-width:1038px) and (min-width:631px) {
+	.container .column.four { 
+		width:90%; 
+	}
+}
+
 body 
 {
 	background-color: #e4e4e4;
@@ -115,7 +121,6 @@ body
 {
 	text-decoration: none;
 	color: #343434;
-	float: right;
 	margin-right: 25px;
 	font-size: 18px;
 	font-family: "HelveticaNeue";
@@ -185,20 +190,17 @@ footer p
 .menu .active
 {
 
-	background-color: #5187c4;
-	padding: 6px 14px 8px 14px;
-	color: white;
-	border-bottom: 2px solid rgb(80, 110, 155);
+	font-weight: bold;
+    color: #5187c4;
+    border-bottom: 2px solid;
 }
 
 .menu ul li a:hover
 {
-	background-color: #ededed;
 	padding: 6px 14px 8px 14px;
-	border-bottom: 2px solid #a0a0a0;
-	transition: background-color 0.5s;
+    color: #5187c4;
+    border-bottom: 2px solid;
 	transition: border-bottom 0.3s;
-	-webkit-transition: background-color 0.5s;
 	-webkit-transition: border-bottom 0.3s;
 }
 
@@ -266,7 +268,7 @@ footer p
 
 .related-meta
 {
-	width: 285px;
+	width: 90%;
 	float: left;
 	margin-top: -1px;
 	margin-left: 17px;
@@ -275,7 +277,7 @@ footer p
 
 .r1 
 {
-	width: 285px;
+	width: 90%;
 	height: 120px;
 	background:url(../images/r1.png);
 	background-repeat: no-repeat;
@@ -283,7 +285,7 @@ footer p
 
 .r2
 {
-	width: 285px;
+	width: 90%;
 	height: 120px;
 	background:url(../images/r2.png);
 	background-repeat: no-repeat;
@@ -291,7 +293,7 @@ footer p
 
 .r3
 {
-	width: 285px;
+	width: 90%;
 	height: 120px;
 	background:url(../images/r3.png);
 	background-repeat: no-repeat;
@@ -325,12 +327,17 @@ footer p
 .main 
 {
 	min-height: 1100px;
+	margin-top: 25px;
 	width: 660px;
 	margin-left: 340px;
 	background-color: white;
-	margin-top: 25px;
 	box-shadow: 0px 2px 0px #c9c9c9;
 }
+
+.post-margin .main
+	{
+		margin-top: 25px;
+	}
 
 .bio .shadeed
 {
@@ -343,7 +350,7 @@ footer p
 	margin-left: 15px;
 }
 
-.bio h1
+.side .bio h1
 {
 	font-family: 'Roboto',sans-serif;
 	font-weight: bold;
@@ -386,6 +393,7 @@ footer p
 
 .social ul li a
 {
+	width: 45%;
 	padding: 40px 40px;
 	display: block;
 	margin: 1px;
@@ -441,11 +449,6 @@ footer p
 	margin-left: 10px;
 }
 
-.social ul li a
-{
-	width: 21%;
-}
-
 .post
 {
 	width: 100%;
@@ -456,11 +459,11 @@ footer p
 
 .post-thumb
 {
-	width: 625px;
+	width: 95.5%;
 	height: 300px;
 	background: url(../images/post.jpg);
 	margin-top: 15px;
-	margin-left: 17px;
+	margin-left: 2.2%;
 	float: left;
 }
 
@@ -530,7 +533,7 @@ footer p
 
 .article
 {
-	width: 625px;
+	width: 90%;
 	margin: auto;
 	float: left;
 	margin-top: 15px;

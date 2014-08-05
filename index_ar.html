@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+	<meta charset="utf-8">
+	<title>iShadeed Blog</title>
+	<link rel="stylesheet" type="text/css" href="css/common_ar.css">
+	<link rel="stylesheet" type="text/css" href="css/style_ar.css">
+	<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
+	<link href='//fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-1.9.1.js"></script>
+</head>
+<script type="text/javascript">
+	$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    var width = $(window).width();
+    if(height  > 105) {
+        $('.post-progress').css("width","+=20");
+    }
+});
+
+$(document).ready(function() {
+	// to hide all the elements when refreshing the page
+	$('.blogs').css("display","none");
+
+	$("#projectclick").on("click", function () {
+		$('.project-image').css("display","block");
+	});
+
+	$("#modalclose").on("click", function () {
+		$('.project-image').css("display","none");
+	});
+
+	$(".blog-tab").on("click", function () {
+		$('.portfolio').css("display","none");
+		//fadeIn
+		$(".blogs").fadeIn();
+	    $(".blogs").fadeIn("slow");
+	    $(".blogs").fadeIn(3000);
+
+		$('.blogs').css("display","inline");
+		$(this).css("color","#5187c4");
+		$(this).css("border-bottom","4px solid #5187c4");
+		$(".portfolio-tab").css("border","none");
+		$(".portfolio-tab").css("color","#b7b7b7");
+		$(".main").css("min-height","1350px");
+
+	});
+
+	$(".portfolio-tab").on("click", function () {
+		$('.blogs').css("display","none");
+		//fadeIn
+		$(".portfolio").fadeIn();
+	    $(".portfolio").fadeIn("slow");
+	    $(".portfolio").fadeIn(3000);
+
+		$('.portfolio').css("display","inline");
+		$(this).css("color","#5187c4");
+
+
+		$(this).css("border-bottom","4px solid #5187c4");
+		$(".blog-tab").css("border","none");
+
+		$(".blog-tab").css("color","#b7b7b7");
+		$(".main").css("min-height","1100px");
+	});
+
+	$('.hide').on("click", function () {
+		//alert("hello");
+	    //$(this).hide();
+	    $('.bdesh').fadeIn(300);
+	    $('.bdesh').css("display","inline");
+	    //$('.bdesh-text').animate({font-size:"14px"});
+	});
+
+	$('.menu-toggle').on("click", function () {
+	    //$('.menu ul').css("display","block");
+	    $('.menu ul').slideToggle( "fast" );
+	});
+
+	/*var windowsize = $(window).width();
+	if(windowsize > 630)
+	{
+		alert("ffdf");
+	}*/
+
+	$('.bdesh').on("click", function () {
+		//alert("hello");
+	    //$(this).hide();
+	    $(this).fadeOut();
+	    $('.bdesh').css("display","none");
+	});
+});
+
+</script>
+<body style="overflow-x:hidden;">
+
+<div id="openModal" class="modalDialog">
+	<div id="modalbox">
+		<h1 id="project-title">Turbo words project</h1>
+		<a href="#close" id="modalclose">
+			<i class="flaticon-close11"></i>
+		</a>
+	    <img src="images/behance.jpg" class="project-image" style="display:none;">
+	</div>
+</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="container">
+	<div class="menu column six">
+		<a href="index.html"><div class="logo"></div></a>
+		<a href="#" class="menu-toggle">القائمة</a>
+		<ul>
+			<li class="li-active"><a href="index_ar.html" class="active">الرئيسية</a></li>
+			<li><a href="about_ar.html">من أنا؟</a></li>
+			<li><a href="#">قالوا عني</a></li>
+			<li><a href="cv_ar.html">سيرتي الذاتية</a></li>
+			<li><a href="#">تواصل معي</a></li>
+			<li><a href="index.html" class="arabic">English</a></li>
+		</ul>
+	</div>
+
+	<div class="main column four column-margin">
+		<ul>
+			<li class="t1"><a href="#" style="color:#5187c4;" class="portfolio-tab">أعمالي</a></li>
+			<li class="t2"><a href="#" class="blog-tab">تدويناتي</a></li>
+		</ul>
+
+		<div class="blogs">
+			<div class="article">
+				<a href="post.html">
+				<div class="thumbnail"></div>
+				<div class="meta">
+					<h1>خطوات الانتقال للعمل الحر</h1>
+					<p>يخطئ من يعتقد أن كلمة “تعديلات” بمفهوم العمل الوظيفي والشركات، هي نفسها في العمل الحر، فالفوارق كثيرة أهمها أن العمل أو التصميم الفني، في العمل الوظيفي..."</p>
+				</div>
+				<div class="bottom-section">
+					<div class="date">
+						<i class="flaticon-simple18"></i>
+						<h2>12/7/2014 ,السبت</h2>
+				    </div>
+				    <div class="time">
+						<i class="flaticon-clock46"></i>
+						<h2>تحتاج 3 دقائق للقراءة</h2>
+				    </div>
+				    <div class="comments">
+						<i class="flaticon-comment3"></i>
+						<h2>13 تعليق</h2>
+				    </div>
+				    <div class="read">
+						<i class="flaticon-add11"></i>
+						<a href="#">أكمل القراءة</a>
+				    </div>
+				</div>
+				</a>
+			</div>
+			
+		</div>
+
+		<div class="portfolio">
+			<div class="project1">
+				<a href="#">
+				<div class="thumbnail"></div>
+				<div class="meta">
+					<h1>إعادة تصميم انستاغرام</h1>
+					<p>عزيزي المستخدم، هذا النص ليس القراءة. نشكرك جدا على وقتك في قراءته :P</p>
+				</div>
+				</a>
+			</div>
+			<div class="project1">
+				<a href="#">
+				<div class="thumbnail"></div>
+				<div class="meta">
+					<h1>إعادة تصميم انستاغرام</h1>
+					<p>عزيزي المستخدم، هذا النص ليس القراءة. نشكرك جدا على وقتك في قراءته :P</p>
+				</div>
+				</a>
+			</div>
+			<div class="project1">
+				<a href="#">
+				<div class="thumbnail"></div>
+				<div class="meta">
+					<h1>إعادة تصميم انستاغرام</h1>
+					<p>عزيزي المستخدم، هذا النص ليس القراءة. نشكرك جدا على وقتك في قراءته :P</p>
+				</div>
+				</a>
+			</div>
+			<div class="project1">
+				<a href="#">
+				<div class="thumbnail"></div>
+				<div class="meta">
+					<h1>إعادة تصميم انستاغرام</h1>
+					<p>عزيزي المستخدم، هذا النص ليس القراءة. نشكرك جدا على وقتك في قراءته :P</p>
+				</div>
+				</a>
+			</div>
+			<div class="project1">
+				<a href="#">
+				<div class="thumbnail"></div>
+				<div class="meta">
+					<h1>إعادة تصميم انستاغرام</h1>
+					<p>عزيزي المستخدم، هذا النص ليس القراءة. نشكرك جدا على وقتك في قراءته :P</p>
+				</div>
+				</a>
+			</div>
+			<div class="project1">
+				<a href="#">
+				<div class="thumbnail"></div>
+				<div class="meta">
+					<h1>إعادة تصميم انستاغرام</h1>
+					<p>عزيزي المستخدم، هذا النص ليس القراءة. نشكرك جدا على وقتك في قراءته :P</p>
+				</div>
+				</a>
+			</div>
+			<div class="project1">
+				<a href="#">
+				<div class="thumbnail"></div>
+				<div class="meta">
+					<h1>إعادة تصميم انستاغرام</h1>
+					<p>عزيزي المستخدم، هذا النص ليس القراءة. نشكرك جدا على وقتك في قراءته :P</p>
+				</div>
+				</a>
+			</div>
+			<div class="project1">
+				<a href="#">
+				<div class="thumbnail"></div>
+				<div class="meta">
+					<h1>إعادة تصميم انستاغرام</h1>
+					<p>عزيزي المستخدم، هذا النص ليس القراءة. نشكرك جدا على وقتك في قراءته :P</p>
+				</div>
+				</a>
+			</div>		
+		</div>
+	</div>
+
+	<div class="side column two">
+		<div class="bio">
+			<div class="bdesh">
+				<h3 class="bdesh-text">I don't want to hide :P</h3>
+			</div>
+			<div class="shadeed"></div>
+			<div class="bio-meta">
+				<h1 class="name">أحمد شديد</h1>
+				<p>مصمم ويب وموبايل. مهتم في خبرة المستخدم والتصميم التفاعلي، أحب الألوان وأطمح بأن اكون مطور ومصمم.</p>
+		    </div> 
+		    <a href="#" class="hide">
+		    	<i class="flaticon-left17" class="hide-icon"></i>
+		    	<span class="hide-text">أخفيني</span>
+		    </a> 
+		</div>
+		<div class="social">
+			<h1>تابعني</h1>
+			<ul>
+				<li><a href="#" class="facebook">
+					<i class="flaticon-facebook42"></i>
+					<span>3.5K متابع</span>
+				</a></li>
+				<li><a href="#" class="twitter">
+					<i class="flaticon-social19"></i>
+					<span>800 متابع</span>
+				</a></li>
+				<li><a href="#" class="behance">
+					<i class="flaticon-behance2"></i>
+					<span>600 متابع</span>
+				</a></li>
+				<li><a href="#" class="instagram">
+					<i class="flaticon-vintage2"></i>
+					<span>170 متابع</span>
+				</a></li>
+			</ul>
+		</div>
+		<div class="fb-plugin">
+			<div class="fb-like-box" data-href="https://www.facebook.com/ishadeed" data-width="290" data-height="315" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+		</div>
+
+		<div class="twitter-widget">
+			<a class="twitter-timeline" width="340px" href="https://twitter.com/shadeed9" data-widget-id="486971379854483456" data-tweet-limit="3" data-chrome="nofooter transparent noheader transparent">Tweets by @shadeed9</a>
+         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+	<footer style="margin-top:20px; margin-bottom:20px;">
+		<p>شكرا على وصولك هنا :)</p>
+	</footer>
+</div>
+</body>
+</html>

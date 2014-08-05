@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+	<meta charset="utf-8">
+	<title>iShadeed Blog</title>
+	<link rel="stylesheet" type="text/css" href="css/common_ar.css">
+	<link rel="stylesheet" type="text/css" href="css/about_ar.css">
+	<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
+	<link href='//fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-1.9.1.js"></script>
+</head>
+<script>
+var lines = null;
+
+function countLines() {
+    var divHeight = document.getElementById('content').offsetHeight;
+    var lineHeight = $('#content').css('line-height');
+    
+    console.log("Div h " + divHeight);
+    lineHeight = lineHeight.slice(0, -2);
+    console.log("Line h " + lineHeight);
+    lines = divHeight / lineHeight;
+    console.log(lines);
+}
+
+console.log("Hello " + lines);
+
+
+
+$(document).ready(function() {
+	countLines();
+	for(i = 0; i < lines ; i++) {
+		console.log(" dsdsdsds");
+		$(".paper").append("<div class='h-line'></div>");
+	}
+
+	$(window).resize(function() {
+		console.log("resizedsdd");
+		countLines();
+		for(i = 0; i < lines ; i++) {
+			console.log(" dsdsdsds");
+			$(".paper").append("<div class='h-line'></div>");
+		}
+    });
+
+	$('.hide').on("click", function () {
+	    $('.bdesh').fadeIn(300);
+	    $('.bdesh').css("display","inline");
+	});
+
+	$('.menu-toggle').on("click", function () {
+	    $('.menu ul').slideToggle( "fast" );
+	});
+
+	$('.bdesh').on("click", function () {
+	    $(this).fadeOut();
+	    $('.bdesh').css("display","none");
+	});
+});
+
+</script>
+
+<body onload="countLines();">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="container">
+	<div class="menu column six">
+		<a href="index.html"><div class="logo"></div></a>
+		<a href="#" class="menu-toggle">القائمة</a>
+		<ul>
+			<li><a href="index_ar.html">الرئيسية</a></li>
+			<li class="li-active"><a href="about_ar.html" class="active">من أنا؟</a></li>
+			<li><a href="#">قالوا عني</a></li>
+			<li><a href="cv_ar.html">سيرتي الذاتية</a></li>
+			<li><a href="#">تواصل معي</a></li>
+			<li><a href="index.html" class="arabic">English</a></li>
+		</ul>
+	</div>
+
+
+	<h1 class="title column four column-margin">من أنا ؟</h1>
+	<div class="about column four column-margin">
+		<div class="v-line"></div>
+		<div class="text" id="content">
+			
+			منذ الطفولة وأنا احب عالم الاشكال والألوان. تعلمت بان أصبح مصمم لان لدي فضول وشغف كبير في تعلم الأشياء الجديدة، لذلك قمت بالتعلم من تلقاء نفسي بحيث أرى كل مشروع عبارة عن مشكلة تحتاج إلى حل.</br>
+			<span> أستطيع مساعدتك في المجالات التالية:</span> تصميم المواقع، تطبيقات الجوال، والطباعة.</br> ومن الامور التي اهتم بها هي تصميم خبرة المستخدم والتصميم التفاعلي.</br>
+			<span>الأمور التي احبها:</span> كرة القدم، الرسم، التصوير، الافلام الوثائقية.</br>
+			<span>الأمور التي لا أحبها:</span> عدم الدقة بالمواعيد، كلمة “وظيفة”، الروتين، التاريخ، الناس السلبيين
+		    
+	    </div>
+		<div class="paper">
+		     <div class="h-line"></div>
+		     
+	    </div>
+	</div>
+
+	<div class="side column two">
+		<div class="bio">
+			<div class="bdesh">
+				<h3 class="bdesh-text">I don't want to hide :P</h3>
+			</div>
+			<div class="shadeed"></div>
+			<div class="bio-meta">
+				<h1 class="name">أحمد شديد</h1>
+				<p>مصمم ويب وموبايل. مهتم في خبرة المستخدم والتصميم التفاعلي، أحب الألوان وأطمح بأن اكون مطور ومصمم.</p>
+		    </div> 
+		    <a href="#" class="hide">
+		    	<i class="flaticon-left17" class="hide-icon"></i>
+		    	<span class="hide-text">أخفيني</span>
+		    </a> 
+		</div>
+		<div class="social">
+			<h1>تابعني</h1>
+			<ul>
+				<li><a href="#" class="facebook">
+					<i class="flaticon-facebook42"></i>
+					<span>3.5K متابع</span>
+				</a></li>
+				<li><a href="#" class="twitter">
+					<i class="flaticon-social19"></i>
+					<span>800 متابع</span>
+				</a></li>
+				<li><a href="#" class="behance">
+					<i class="flaticon-behance2"></i>
+					<span>600 متابع</span>
+				</a></li>
+				<li><a href="#" class="instagram">
+					<i class="flaticon-vintage2"></i>
+					<span>170 متابع</span>
+				</a></li>
+			</ul>
+		</div>
+		<div class="fb-plugin">
+			<div class="fb-like-box" data-href="https://www.facebook.com/ishadeed" data-width="290" data-height="315" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+		</div>
+
+		<div class="twitter-widget">
+			<a class="twitter-timeline" width="340px" href="https://twitter.com/shadeed9" data-widget-id="486971379854483456" data-tweet-limit="3" data-chrome="nofooter transparent noheader transparent">Tweets by @shadeed9</a>
+         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>
+	</div>
+
+
+	<div class="clear"></div>
+	<footer style="margin-top:-20px; margin-bottom:20px;">
+		<p>شكرا على وصولك هنا :)</p>
+	</footer>
+</div>
+</body>
+</html>
